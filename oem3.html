@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mercedes-Benz C Class W204 — OEM 3 — SCW</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css?v=20260927-2230">
+</head>
+<body>
+<header class="topbar">
+<a class="logo" href="index.html"><img class="scw-logo-img" src="scw-logo-final.svg?v=20260927-1215" alt="SCW"><small>SMIRNOV CUSTOM WORKS</small></a>
+<a class="quote" href="index.html#contact">GET A QUOTE →</a>
+</header>
+
+<main class="catalog">
+<a class="back" id="back-link" href="solution.html">← CAR MULTIMEDIA</a>
+<h1 id="car">Multimedia</h1>
+<div class="blue-line"></div><section class="oem-detail-card"><img src="assets/IMG_4345.jpeg?v=1" alt="Mercedes-Benz W204 new multimedia display" width="1024" height="768"><div class="oem-detail-caption">Replacing the factory display with a new one is the perfect way to refresh your car’s multimedia system. The stunning 12-inch touchscreen blends seamlessly with the interior, bringing modern technology to a timeless classic.</div></section>
+
+      <section class="oem-additional-section">
+        <h2 class="oem-additional-title">Additional Equipment</h2>
+        <div class="oem-detail-card"><img src="assets/IMG_4312.jpeg?v=1" alt="Additional equipment for Mercedes-Benz C Class W204" loading="lazy"></div>
+      </section>
+</main>
+
+<footer class="site-footer"><a class="logo" href="index.html"><img class="scw-logo-img" src="scw-logo-final.svg?v=20260927-1215" alt="SCW"><small>SMIRNOV CUSTOM WORKS</small></a><div class="footer-contact">info@scw-group.com · Cyprus</div><div class="footer-copy">© 2026 SCW Group</div><div class="footer-status"><strong>SCW ONLINE • AUTOMATIC DEPLOY ACTIVE</strong></div></footer>
+
+<script>
+let p=new URLSearchParams(location.search),
+    b=p.get("brand")||"",
+    m=p.get("model")||"";
+car.textContent=(b+" "+m).trim()||"Multimedia";
+let back=document.getElementById("back-link");
+back.href="solution.html?brand="+encodeURIComponent(b)+"&model="+encodeURIComponent(m);
+</script>
+</body>
+</html>
