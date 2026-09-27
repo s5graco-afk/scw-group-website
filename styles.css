@@ -294,3 +294,34 @@ main{
     line-height:1.45;
   }
 }
+
+/* OEM detail card */
+.oem-detail-card{
+  margin-top:42px;
+  border:1px solid #30363a;
+  background:#111619;
+  padding:16px;
+}
+.oem-detail-card img{
+  display:block;
+  width:100%;
+  height:auto;
+  background:#0f1316;
+}
+.oem-detail-caption{
+  padding:20px 4px 4px;
+  color:#f5f5f5;
+  font-size:22px;
+  line-height:1.25;
+  font-weight:700;
+}
+@media(max-width:900px){
+  .oem-detail-card{
+    margin-top:34px;
+    padding:14px;
+  }
+  .oem-detail-caption{
+    padding:18px 2px 4px;
+    font-size:20px;
+  }
+}
