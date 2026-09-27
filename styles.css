@@ -131,3 +131,22 @@ footer .logo small{
     font-size:39px!important;
   }
 }
+
+/* Model selector production years */
+.model-grid a{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+  gap:7px;
+}
+.model-grid a strong{
+  font-size:1em;
+  font-weight:500;
+}
+.model-year{
+  color:#8d9498;
+  font-size:12px;
+  letter-spacing:1.4px;
+  text-transform:uppercase;
+}
