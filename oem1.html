@@ -11,6 +11,23 @@
 <a class="logo" href="index.html"><img class="scw-logo-img" src="scw-logo-final.svg?v=20260927-1215" alt="SCW"><small>SMIRNOV CUSTOM WORKS</small></a>
 <a class="quote" href="index.html#contact">GET A QUOTE →</a>
 </header>
-<main class="catalog empty-detail"></main>
-<footer class="site-footer"><a class="logo" href="index.html"><img class="scw-logo-img" src="scw-logo-final.svg?v=20260927-1215" alt="SCW"><small>SMIRNOV CUSTOM WORKS</small></a><div class="footer-contact">info@scw-group.com · Cyprus</div><div class="footer-copy">© 2026 SCW Group</div><div class="footer-status"><strong>SCW ONLINE • AUTOMATIC DEPLOY ACTIVE</strong></div></footer></body>
+
+<main class="catalog">
+<a class="back" id="back-link" href="solution.html">← CAR MULTIMEDIA</a>
+<h1 id="car">Multimedia</h1>
+<div class="blue-line"></div>
+<h2>Choose your multimedia</h2>
+</main>
+
+<footer class="site-footer"><a class="logo" href="index.html"><img class="scw-logo-img" src="scw-logo-final.svg?v=20260927-1215" alt="SCW"><small>SMIRNOV CUSTOM WORKS</small></a><div class="footer-contact">info@scw-group.com · Cyprus</div><div class="footer-copy">© 2026 SCW Group</div><div class="footer-status"><strong>SCW ONLINE • AUTOMATIC DEPLOY ACTIVE</strong></div></footer>
+
+<script>
+let p=new URLSearchParams(location.search),
+    b=p.get("brand")||"",
+    m=p.get("model")||"";
+car.textContent=(b+" "+m).trim()||"Multimedia";
+let back=document.getElementById("back-link");
+back.href="solution.html?brand="+encodeURIComponent(b)+"&model="+encodeURIComponent(m);
+</script>
+</body>
 </html>
