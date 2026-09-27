@@ -9,3 +9,6 @@
   .topbar .logo .scw-svg{width:120px!important;height:32px!important}
   .topbar .logo small{margin-top:8px!important}
 }
+
+/* SCW logo SVG sizing fix */
+.logo .scw-mark{display:block!important;width:126px!important;height:34px!important;min-width:126px!important;overflow:visible!important}.logo .scw-svg{display:block!important;width:126px!important;height:34px!important;fill:#fff!important;visibility:visible!important;opacity:1!important}.logo .scw-svg .scw-red{fill:#f01827!important}@media(max-width:900px){.topbar .logo .scw-mark,.topbar .logo .scw-svg{width:120px!important;height:32px!important;min-width:120px!important}}
