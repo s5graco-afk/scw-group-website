@@ -325,3 +325,13 @@ main{
     font-size:20px;
   }
 }
+
+/* Correct OEM detail image rendering */
+.oem-detail-card img{
+  display:block;
+  width:100%;
+  height:auto!important;
+  aspect-ratio:auto!important;
+  object-fit:contain!important;
+  background:#0f1316!important;
+}
