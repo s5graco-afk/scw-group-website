@@ -222,3 +222,75 @@ footer .logo small{
 .empty-detail{
   min-height:70vh;
 }
+
+/* Unified SCW footer */
+body{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+main{
+  flex:1 0 auto;
+}
+.site-footer{
+  flex:0 0 auto;
+  width:100%;
+  padding:42px 4% 46px;
+  border-top:1px solid #292f33;
+  background:#0a0d0f;
+  display:grid;
+  grid-template-columns:auto 1fr auto auto;
+  align-items:center;
+  gap:42px;
+  color:#8d9498;
+  font-size:12px;
+}
+.site-footer .logo{
+  margin-right:0!important;
+}
+.site-footer .footer-contact,
+.site-footer .footer-copy{
+  white-space:nowrap;
+}
+.site-footer .footer-status{
+  white-space:nowrap;
+}
+.site-footer .footer-status strong{
+  color:#8d9498;
+  font-size:12px;
+  letter-spacing:.2px;
+}
+@media(max-width:900px){
+  .site-footer{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:34px;
+    padding:42px 28px 52px;
+    font-size:14px;
+  }
+  .site-footer .logo{
+    width:190px!important;
+    min-width:190px!important;
+  }
+  .site-footer .logo .scw-logo-img{
+    width:170px!important;
+  }
+  .site-footer .logo small{
+    width:158px!important;
+    margin-top:7px!important;
+    font-size:6.2px!important;
+    letter-spacing:1.9px!important;
+    text-align:center!important;
+    transform:translateX(-2px)!important;
+  }
+  .site-footer .footer-contact,
+  .site-footer .footer-copy,
+  .site-footer .footer-status{
+    white-space:normal;
+  }
+  .site-footer .footer-status strong{
+    font-size:14px;
+    line-height:1.45;
+  }
+}
