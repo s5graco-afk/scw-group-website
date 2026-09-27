@@ -210,3 +210,15 @@ footer .logo small{
 @media(max-width:900px){
   .multimedia-photo img{min-height:300px}
 }
+
+.multimedia-card-link{
+  display:block;
+  color:inherit;
+  text-decoration:none;
+}
+.multimedia-card-link .multimedia-photo{
+  cursor:pointer;
+}
+.empty-detail{
+  min-height:70vh;
+}
