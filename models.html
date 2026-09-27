@@ -41,12 +41,25 @@ const d={
     {name:"GX (J150)",years:"2009–2023"},{name:"GX (J250)",years:"2023–present"},
     {name:"LX (J200)",years:"2007–2021"},{name:"LX (J310)",years:"2021–present"}
   ],
-  "Volkswagen":["Golf","Passat","Tiguan","Touareg"]
+  "Volkswagen":["Golf","Passat","Tiguan","Touareg"],
+  "Toyota":[
+    {name:"Yaris (XP130)",years:"2011–2020"},{name:"Yaris (XP210)",years:"2020–present"},
+    {name:"Corolla (E170)",years:"2013–2019"},{name:"Corolla (E210)",years:"2018–present"},
+    {name:"Camry (XV50)",years:"2011–2017"},{name:"Camry (XV70)",years:"2017–2024"},
+    {name:"Prius (XW30)",years:"2009–2015"},{name:"Prius (XW50)",years:"2015–2022"},{name:"Prius (XW60)",years:"2022–present"},
+    {name:"C-HR (AX10)",years:"2016–2023"},{name:"C-HR (AX20)",years:"2023–present"},
+    {name:"Corolla Cross (XG10)",years:"2020–present"},
+    {name:"RAV4 (XA40)",years:"2013–2018"},{name:"RAV4 (XA50)",years:"2019–2026"},
+    {name:"Highlander (XU50)",years:"2013–2020"},{name:"Highlander (XU70)",years:"2019–present"},
+    {name:"Land Cruiser Prado (J150)",years:"2009–2023"},{name:"Land Cruiser (J250)",years:"2023–present"},
+    {name:"Land Cruiser (J200)",years:"2007–2021"},{name:"Land Cruiser (J300)",years:"2021–present"},
+    {name:"Hilux (AN120 / AN130)",years:"2015–2026"}
+  ]
 };
 let p=new URLSearchParams(location.search),b=p.get("brand")||"BMW";
 brand.textContent=b;
 models.innerHTML=(d[b]||["Contact us for available models"]).map(item=>{
   const x=typeof item==="string"?{name:item,years:""}:item;
-  const enabled=(b==="Mercedes-Benz"&&(x.name==="C Class (W204)"||x.name==="SLK (R172)"))||(b==="Audi"&&x.name==="A4 (B8 / 8K)")||(b==="Lexus"&&(x.name==="RX (AL20)"||x.name==="NX (AZ10)")); return enabled?`<a href="solution.html?brand=${encodeURIComponent(b)}&model=${encodeURIComponent(x.name)}"><strong>${x.name}</strong>${x.years?`<span class="model-year">${x.years}</span>`:""}</a>`:`<div class="model-disabled"><strong>${x.name}</strong>${x.years?`<span class="model-year">${x.years}</span>`:""}</div>`;
+  const enabled=(b==="Mercedes-Benz"&&(x.name==="C Class (W204)"||x.name==="SLK (R172)"))||(b==="Audi"&&x.name==="A4 (B8 / 8K)")||(b==="Lexus"&&(x.name==="RX (AL20)"||x.name==="NX (AZ10)"))||(b==="Toyota"&&x.name==="RAV4 (XA50)"); return enabled?`<a href="solution.html?brand=${encodeURIComponent(b)}&model=${encodeURIComponent(x.name)}"><strong>${x.name}</strong>${x.years?`<span class="model-year">${x.years}</span>`:""}</a>`:`<div class="model-disabled"><strong>${x.name}</strong>${x.years?`<span class="model-year">${x.years}</span>`:""}</div>`;
 }).join("");
 </script><footer class="site-footer"><a class="logo" href="index.html"><img class="scw-logo-img" src="scw-logo-final.svg?v=20260927-1215" alt="SCW"><small>SMIRNOV CUSTOM WORKS</small></a><div class="footer-contact">info@scw-group.com · Cyprus</div><div class="footer-copy">© 2026 SCW Group</div><div class="footer-status"><strong>SCW ONLINE • AUTOMATIC DEPLOY ACTIVE</strong></div></footer></body></html>
