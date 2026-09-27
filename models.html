@@ -47,6 +47,6 @@ let p=new URLSearchParams(location.search),b=p.get("brand")||"BMW";
 brand.textContent=b;
 models.innerHTML=(d[b]||["Contact us for available models"]).map(item=>{
   const x=typeof item==="string"?{name:item,years:""}:item;
-  const enabled=(b==="Mercedes-Benz"&&(x.name==="C Class (W204)"||x.name==="SLK (R172)"))||(b==="Audi"&&x.name==="A4 (B8 / 8K)"); return enabled?`<a href="solution.html?brand=${encodeURIComponent(b)}&model=${encodeURIComponent(x.name)}"><strong>${x.name}</strong>${x.years?`<span class="model-year">${x.years}</span>`:""}</a>`:`<div class="model-disabled"><strong>${x.name}</strong>${x.years?`<span class="model-year">${x.years}</span>`:""}</div>`;
+  const enabled=(b==="Mercedes-Benz"&&(x.name==="C Class (W204)"||x.name==="SLK (R172)"))||(b==="Audi"&&x.name==="A4 (B8 / 8K)")||(b==="Lexus"&&x.name==="RX (AL20)"); return enabled?`<a href="solution.html?brand=${encodeURIComponent(b)}&model=${encodeURIComponent(x.name)}"><strong>${x.name}</strong>${x.years?`<span class="model-year">${x.years}</span>`:""}</a>`:`<div class="model-disabled"><strong>${x.name}</strong>${x.years?`<span class="model-year">${x.years}</span>`:""}</div>`;
 }).join("");
 </script><footer class="site-footer"><a class="logo" href="index.html"><img class="scw-logo-img" src="scw-logo-final.svg?v=20260927-1215" alt="SCW"><small>SMIRNOV CUSTOM WORKS</small></a><div class="footer-contact">info@scw-group.com · Cyprus</div><div class="footer-copy">© 2026 SCW Group</div><div class="footer-status"><strong>SCW ONLINE • AUTOMATIC DEPLOY ACTIVE</strong></div></footer></body></html>
