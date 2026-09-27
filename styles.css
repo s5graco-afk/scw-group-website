@@ -1,61 +1,117 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#0a0d0f;color:#f5f5f5;font-family:Arial,Helvetica,sans-serif}.topbar{height:108px;padding:0 4%;display:flex;align-items:center;gap:42px;background:#0b0e10;position:sticky;top:0;z-index:20;border-bottom:1px solid #202428}.logo{color:white;text-decoration:none;display:flex;flex-direction:column;line-height:.8;margin-right:auto}.logo .scw-mark{display:block;width:126px;height:34px;line-height:1}.scw-svg{display:block;width:100%;height:100%;fill:#fff}.scw-svg .scw-red{fill:#f01827}.logo small{font-size:9px;letter-spacing:3px;margin-top:11px;font-weight:600}.logo em{display:none}.red{color:#f01827}.topbar nav{display:flex;gap:38px}.topbar nav a{color:#eee;text-decoration:none;font-size:13px;letter-spacing:.6px;padding:32px 0 22px}.topbar nav a.active{color:#f01827;border-bottom:2px solid #f01827}.quote,.btn{background:#f01827;color:white;text-decoration:none;font-weight:800;letter-spacing:1px;padding:20px 30px;border-radius:3px;font-size:13px}.quote b{margin-left:18px}.hero{height:535px;position:relative;background:#080a0b;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 76% 62%,rgba(240,24,39,.18),transparent 18%),linear-gradient(118deg,transparent 48%,rgba(240,24,39,.09) 49%,transparent 51%),radial-gradient(ellipse at 77% 68%,rgba(90,96,100,.22),transparent 29%);opacity:.9}.shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,7,8,.96) 0%,rgba(5,7,8,.75) 34%,rgba(5,7,8,.08) 67%,rgba(5,7,8,.12) 100%)}.hero-copy{position:relative;z-index:2;padding:68px 4%;max-width:620px}.kicker{font-size:12px;letter-spacing:5px;color:#c9cdd0}.hero h1{font-size:60px;line-height:.95;margin:25px 0 20px;letter-spacing:-2px}.hero h1 span{color:#f01827}.lead{font-size:17px;line-height:1.55;color:#e0e2e3}.actions{display:flex;gap:24px;margin-top:28px}.ghost{background:rgba(10,12,14,.6);border:1px solid #a7abad}.servicebar{display:grid;grid-template-columns:repeat(5,1fr);padding:28px 4%;background:#0b0e10;border-top:1px solid #24282b;border-bottom:1px solid #202428}.servicebar article{display:flex;gap:17px;padding:0 25px;border-right:1px solid #33383b}.servicebar article:first-child{padding-left:0}.servicebar article:last-child{border:0}.servicebar h3{font-size:12px;margin:3px 0 10px}.servicebar p{color:#aeb3b6;font-size:12px;line-height:1.5;margin:0}.ico{font-size:30px;color:#f01827}.brands{padding:35px 4% 50px;background:linear-gradient(#111619,#0c1012)}.section-title{display:flex;align-items:center;gap:20px;font-size:11px;letter-spacing:5px;margin-bottom:20px}.section-title i{height:1px;background:#33383b;flex:1}.brandgrid{display:grid;grid-template-columns:repeat(9,1fr);gap:14px}.brandgrid a{min-height:128px;border:1px solid #292f33;border-radius:5px;color:white;text-decoration:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:#12171a;text-align:center;padding:10px}.brandgrid strong{font-size:15px}.brandgrid a:last-child strong{font-size:30px}.brandgrid span{font-size:12px}.about{padding:90px 8%;max-width:900px}.about h2,.contact h2{font-size:38px;margin:12px 0}.about>p:last-child{color:#aeb3b6;font-size:17px;line-height:1.7}.contact{padding:65px 8%;background:#111619;border-top:1px solid #292f33;display:flex;justify-content:space-between;align-items:center}.contact p{color:#aeb3b6}footer{padding:35px 4%;border-top:1px solid #292f33;display:flex;align-items:center;gap:60px;color:#8d9498;font-size:12px}footer .logo .scw-mark{width:88px;height:24px}footer .logo small{font-size:7px;letter-spacing:2px}.catalog{max-width:1100px;margin:auto;padding:65px 25px 120px}.catalog h1{font-size:48px}.catalog h2{margin-top:35px}.blue-line{width:70px;border-top:2px solid #f01827}.back{color:#aaa;text-decoration:none;font-size:11px}.brands-old,.model-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.model-grid a,.brands-old a{background:#12171a;border:1px solid #30363a;color:#eee;text-decoration:none;padding:16px}.solutions{display:grid;grid-template-columns:1fr 1fr;gap:20px}.solutions article{border:1px solid #30363a;background:#12171a;padding:18px}.placeholder{height:190px;background:#1c2226;display:grid;place-items:center}.solutions p{color:#aeb3b6;line-height:1.6}@media(max-width:900px){.topbar{height:78px;padding:0 18px}.logo .scw-mark{width:120px;height:32px}.logo small{font-size:7px;letter-spacing:2px}.topbar nav{display:none}.quote{padding:14px 15px}.hero{height:590px}.hero:before{background:radial-gradient(ellipse at 82% 33%,rgba(240,24,39,.16),transparent 22%),linear-gradient(145deg,transparent 56%,rgba(240,24,39,.07) 57%,transparent 59%);opacity:.8}.shade{background:linear-gradient(90deg,rgba(5,7,8,.97),rgba(5,7,8,.78))}.hero-copy{padding:80px 24px}.hero h1{font-size:46px}.lead{font-size:15px}.servicebar{grid-template-columns:1fr}.servicebar article{border-right:0;border-bottom:1px solid #33383b;padding:22px 0}.brandgrid{grid-template-columns:repeat(2,1fr)}.contact{align-items:flex-start;flex-direction:column;gap:25px}.solutions,.model-grid{grid-template-columns:1fr}footer{align-items:flex-start;flex-direction:column;gap:20px}}
 
-/* === SCW BRAND LOCK: selected logo, stable desktop/mobile sizing === */
+
+/* === SCW BRAND LOCK v2: fixed logo + protected mobile layout === */
 .logo{
   display:flex!important;
   flex-direction:column!important;
   justify-content:center!important;
   align-items:flex-start!important;
   flex:0 0 auto!important;
-  width:220px!important;
-  min-width:220px!important;
+  width:205px!important;
+  min-width:205px!important;
   margin-right:auto!important;
   line-height:1!important;
   overflow:visible!important;
 }
 .logo .scw-logo-img{
   display:block!important;
-  width:205px!important;
+  width:188px!important;
   height:auto!important;
-  max-width:none!important;
+  max-width:100%!important;
   flex:none!important;
 }
 .logo small{
   display:block!important;
-  margin-top:8px!important;
-  font-size:8px!important;
+  margin-top:7px!important;
+  font-size:7.5px!important;
   line-height:1!important;
-  letter-spacing:3.4px!important;
+  letter-spacing:3px!important;
   font-weight:600!important;
   white-space:nowrap!important;
   color:#fff!important;
 }
-.logo em,.logo .scw-mark,.logo .scw-letter,.logo .scw-dot,.logo .scw-svg{
-  display:none!important;
-}
 footer .logo{
-  width:190px!important;
-  min-width:190px!important;
+  width:180px!important;
+  min-width:180px!important;
 }
 footer .logo .scw-logo-img{
-  width:160px!important;
+  width:150px!important;
 }
 footer .logo small{
-  margin-top:7px!important;
-  font-size:6.5px!important;
-  letter-spacing:2.2px!important;
+  font-size:6.2px!important;
+  letter-spacing:2px!important;
 }
 @media(max-width:900px){
+  .topbar{
+    height:88px!important;
+    padding:0 16px!important;
+    gap:12px!important;
+  }
   .topbar .logo{
-    width:220px!important;
-    min-width:220px!important;
+    width:158px!important;
+    min-width:158px!important;
+    height:auto!important;
   }
   .topbar .logo .scw-logo-img{
-    width:205px!important;
+    width:150px!important;
+    height:auto!important;
   }
   .topbar .logo small{
-    margin-top:8px!important;
-    font-size:7px!important;
-    letter-spacing:2.7px!important;
+    margin-top:6px!important;
+    font-size:5.8px!important;
+    letter-spacing:2px!important;
+  }
+  .topbar .quote{
+    flex:0 0 auto!important;
+    padding:14px 16px!important;
+    font-size:11px!important;
+    letter-spacing:.8px!important;
+    white-space:nowrap!important;
+  }
+  .topbar .quote b{
+    margin-left:10px!important;
+  }
+  .hero{
+    height:560px!important;
+  }
+  .hero-copy{
+    padding:62px 20px!important;
+    max-width:100%!important;
+  }
+  .hero h1{
+    font-size:42px!important;
+    line-height:.98!important;
+    letter-spacing:-1.5px!important;
+    white-space:normal!important;
+  }
+  .lead{
+    font-size:15px!important;
+    line-height:1.5!important;
+  }
+  .actions{
+    gap:14px!important;
+  }
+  .actions .btn{
+    padding:17px 18px!important;
+    font-size:11px!important;
+    flex:1 1 0!important;
+    text-align:center!important;
+  }
+}
+@media(max-width:390px){
+  .topbar .logo{
+    width:145px!important;
+    min-width:145px!important;
+  }
+  .topbar .logo .scw-logo-img{
+    width:138px!important;
+  }
+  .topbar .quote{
+    padding:13px 13px!important;
+    font-size:10.5px!important;
+  }
+  .hero h1{
+    font-size:39px!important;
   }
 }
