@@ -460,6 +460,3 @@ main{
     height:auto;
   }
 }
-
-/* Service artwork icon */
-.service-icon-image img{display:block;width:48px;height:48px;object-fit:cover;border-radius:6px}
