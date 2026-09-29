@@ -382,3 +382,15 @@ main{
   .model-grid strong{font-size:22px}
   .model-grid .model-year{font-size:17px}
 }
+
+/* Hero headline: perfectly round red punctuation dots */
+.hero-copy h1 span{
+  display:inline-block;
+  width:.18em;
+  height:.18em;
+  margin-left:.07em;
+  border-radius:50%;
+  background:currentColor;
+  font-size:0;
+  vertical-align:.12em;
+}
