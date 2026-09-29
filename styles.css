@@ -539,3 +539,16 @@ main{
     margin-right:auto;
   }
 }
+
+/* Tuning performance tables */
+.tuning-table-wrap{margin-top:28px;overflow-x:auto;border:1px solid #30363a;background:#0d1113}
+.tuning-table{width:100%;border-collapse:collapse;min-width:680px}
+.tuning-table th,.tuning-table td{padding:18px 20px;border-bottom:1px solid #30363a;text-align:left;vertical-align:middle}
+.tuning-table th{color:#8e959a;font-size:14px;letter-spacing:.08em;text-transform:uppercase;background:#111619}
+.tuning-table td{color:#f5f5f5;font-size:18px}
+.tuning-table td strong,.tuning-table td span{display:block}
+.tuning-table td span{margin-top:5px;color:#aeb4b8}
+.tuning-table td:last-child strong,.tuning-table td:last-child span{color:#ff2638}
+.tuning-table tbody tr:last-child td{border-bottom:0}
+.tuning-note{margin:18px 0 0;color:#8e959a;font-size:14px;line-height:1.5}
+@media(max-width:900px){.tuning-table th,.tuning-table td{padding:14px 16px}.tuning-table td{font-size:16px}}
