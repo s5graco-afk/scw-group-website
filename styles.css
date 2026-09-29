@@ -461,23 +461,27 @@ main{
   }
 }
 
-/* Vehicle service tiles: keep original artwork proportions, slightly smaller and uniform */
+
+
+/* Vehicle service cards: identical rendered card size */
 .vehicle-service-card{
-  display:flex!important;
-  align-items:center;
-  justify-content:center;
+  width:92%!important;
+  aspect-ratio:1 / 1!important;
+  justify-self:center;
+  display:block!important;
 }
 .vehicle-service-card img{
-  width:92%!important;
-  height:auto!important;
-  aspect-ratio:auto!important;
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  aspect-ratio:1 / 1!important;
   object-fit:contain!important;
-  margin:auto;
+}
+.vehicle-service-card.tuning-service-card{
+  width:92%!important;
 }
 @media(max-width:900px){
-  .vehicle-service-card img{width:92%!important;height:auto!important}
+  .vehicle-service-card,
+  .vehicle-service-card.tuning-service-card{width:92%!important}
+  .vehicle-service-card img{width:100%!important;height:100%!important}
 }
-
-/* Match tuning artwork visually to the other service cards */
-.vehicle-service-card.tuning-service-card img{width:76%!important}
-@media(max-width:900px){.vehicle-service-card.tuning-service-card img{width:76%!important}}
