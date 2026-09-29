@@ -461,20 +461,19 @@ main{
   }
 }
 
-/* Equal-size vehicle service tiles */
+/* Vehicle service tiles: keep original artwork proportions, slightly smaller and uniform */
 .vehicle-service-card{
-  aspect-ratio:1 / 1;
   display:flex!important;
   align-items:center;
   justify-content:center;
 }
 .vehicle-service-card img{
-  width:100%!important;
-  height:100%!important;
-  aspect-ratio:1 / 1!important;
-  object-fit:cover!important;
+  width:92%!important;
+  height:auto!important;
+  aspect-ratio:auto!important;
+  object-fit:contain!important;
+  margin:auto;
 }
 @media(max-width:900px){
-  .vehicle-service-card{aspect-ratio:1 / 1}
-  .vehicle-service-card img{width:100%!important;height:100%!important}
+  .vehicle-service-card img{width:92%!important;height:auto!important}
 }
