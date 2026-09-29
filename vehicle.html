@@ -5,10 +5,10 @@
 <main class="catalog"><a class="back" id="back" href="models.html">← MODELS</a><h1 id="car">Vehicle</h1><div class="blue-line"></div><h2>Choose a service</h2>
 <div class="vehicle-service-grid">
 <a class="vehicle-service-card" id="multimedia" href="#"><img src="assets/8985DF0D-1944-4708-8E18-D0E52FAF0836.png" alt="Multimedia"></a>
-<a class="vehicle-service-card tuning-service-card" id="tuning" href="#"><img src="assets/85B31C9E-E8D0-4D7C-8682-77E777353D19.png?v=1" alt="Tuning"></a>
+<div class="vehicle-service-card service-disabled tuning-service-card" id="tuning"><img src="assets/85B31C9E-E8D0-4D7C-8682-77E777353D19.png?v=1" alt="Tuning"></div>
 <div class="vehicle-service-card service-disabled"><img src="assets/CBCBF777-2C96-4303-8EB7-FEF808930E74.png" alt="Retrofits"></div>
 <div class="vehicle-service-card service-disabled"><img src="assets/9806934B-D0AE-47E9-851C-A02E781C5633.png" alt="Keys"></div>
 <div class="vehicle-service-card service-disabled"><img src="assets/42C465E5-2259-47B3-971C-D65DF59D8F04.png" alt="Sound Isolation"></div>
 </div></main>
 <footer class="site-footer"><a class="logo" href="index.html"><img class="scw-logo-img" src="scw-logo-final.svg?v=20260927-1215" alt="SCW"><small>SMIRNOV CUSTOM WORKS</small></a><div class="footer-contact">info@scw-group.com · Cyprus</div><div class="footer-copy">© 2026 SCW Group</div><div class="footer-status"><strong>SCW ONLINE • AUTOMATIC DEPLOY ACTIVE</strong></div></footer>
-<script>const p=new URLSearchParams(location.search),b=p.get("brand")||"",m=p.get("model")||"";car.textContent=(b+" "+m).trim()||"Vehicle";back.href="models.html?brand="+encodeURIComponent(b);multimedia.href="solution.html?brand="+encodeURIComponent(b)+"&model="+encodeURIComponent(m);tuning.href="tuning.html?brand="+encodeURIComponent(b)+"&model="+encodeURIComponent(m);</script></body></html>
+<script>const p=new URLSearchParams(location.search),b=p.get("brand")||"",m=p.get("model")||"";car.textContent=(b+" "+m).trim()||"Vehicle";back.href="models.html?brand="+encodeURIComponent(b);multimedia.href="solution.html?brand="+encodeURIComponent(b)+"&model="+encodeURIComponent(m);if(b==="Mercedes-Benz"){const old=tuning;tuning.outerHTML=`<a class="vehicle-service-card tuning-service-card" id="tuning" href="tuning.html?brand=${encodeURIComponent(b)}&model=${encodeURIComponent(m)}">${old.innerHTML}</a>`;}</script></body></html>
