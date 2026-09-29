@@ -525,3 +525,17 @@ main{
     transform:scale(.78);
   }
 }
+
+/* Multimedia selection pages: reduce solution cards by 30% */
+.multimedia-cards{
+  width:70%;
+  margin-left:auto;
+  margin-right:auto;
+}
+@media(max-width:900px){
+  .multimedia-cards{
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
