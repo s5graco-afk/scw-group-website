@@ -425,3 +425,38 @@ main{
 .vehicle-service-card.service-disabled{cursor:default;opacity:.82}
 .vehicle-service-card:not(.service-disabled):hover{border-color:#f01827;transform:translateY(-2px);transition:.2s ease}
 @media(max-width:900px){.vehicle-service-grid{grid-template-columns:1fr;gap:18px}.vehicle-service-card img{aspect-ratio:auto}}
+
+/* Compact clean vehicle service grid */
+.vehicle-service-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+  max-width:900px;
+}
+.vehicle-service-card{
+  border:0!important;
+  background:transparent!important;
+  overflow:hidden;
+}
+.vehicle-service-card img{
+  width:100%;
+  height:auto;
+  aspect-ratio:auto!important;
+  object-fit:contain!important;
+  border:0!important;
+  display:block;
+}
+.vehicle-service-card:not(.service-disabled):hover{
+  border:0!important;
+  transform:translateY(-2px);
+}
+@media(max-width:900px){
+  .vehicle-service-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:12px;
+    margin-top:22px;
+  }
+  .vehicle-service-card img{
+    width:100%;
+    height:auto;
+  }
+}
