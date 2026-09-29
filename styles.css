@@ -512,3 +512,16 @@ main{
     width:78% !important;
   }
 }
+
+/* Match visible tuning-card outline to the other service cards */
+.vehicle-service-grid .vehicle-service-card.tuning-service-card{
+  width:92% !important;
+  transform:scale(.84);
+  transform-origin:center center;
+}
+@media(max-width:900px){
+  .vehicle-service-grid .vehicle-service-card.tuning-service-card{
+    width:92% !important;
+    transform:scale(.84);
+  }
+}
