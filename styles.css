@@ -485,3 +485,20 @@ main{
   .vehicle-service-card.tuning-service-card{width:92%!important}
   .vehicle-service-card img{width:100%!important;height:100%!important}
 }
+
+/* Equal visual size for all vehicle service cards */
+.vehicle-service-grid .vehicle-service-card{
+  width:92% !important;
+  aspect-ratio:1 / 1 !important;
+  justify-self:center !important;
+  display:block !important;
+}
+.vehicle-service-grid .vehicle-service-card img,
+.vehicle-service-grid .vehicle-service-card.tuning-service-card img{
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  aspect-ratio:1 / 1 !important;
+  object-fit:contain !important;
+  margin:0 !important;
+}
