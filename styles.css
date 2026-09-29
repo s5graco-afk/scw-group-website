@@ -417,3 +417,11 @@ main{
     margin-left:5px !important;
   }
 }
+
+/* Vehicle service category cards */
+.vehicle-service-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:30px}
+.vehicle-service-card{display:block;border:1px solid #30363a;background:#111619;text-decoration:none;overflow:hidden}
+.vehicle-service-card img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+.vehicle-service-card.service-disabled{cursor:default;opacity:.82}
+.vehicle-service-card:not(.service-disabled):hover{border-color:#f01827;transform:translateY(-2px);transition:.2s ease}
+@media(max-width:900px){.vehicle-service-grid{grid-template-columns:1fr;gap:18px}.vehicle-service-card img{aspect-ratio:auto}}
