@@ -1,0 +1,64 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BMW Coding — SCW</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v=20261002-1605">
+<style>
+.coding-wrap{max-width:980px;margin:0 auto;padding:42px 24px 80px}.coding-intro{color:#aeb5ba;max-width:720px;line-height:1.6;margin:0 0 38px}
+.coding-section{margin:38px 0}.coding-section h2{font-size:18px;letter-spacing:.12em;text-transform:uppercase;color:#f01827;margin:0 0 12px}
+.coding-item{border-top:1px solid #30363a}.coding-item:last-child{border-bottom:1px solid #30363a}.coding-item summary{list-style:none;cursor:pointer;padding:20px 52px 20px 0;position:relative;font-weight:700;font-size:18px;color:#f5f5f5}.coding-item summary::-webkit-details-marker{display:none}
+.coding-item summary:after{content:"+";position:absolute;right:8px;top:14px;color:#f01827;font-size:30px;font-weight:300}.coding-item[open] summary:after{content:"−"}
+.coding-desc{padding:0 50px 22px 0;color:#aeb5ba;line-height:1.65}.coding-desc strong{color:#fff}.coding-note{margin-top:10px;color:#d6dadd}
+@media(max-width:700px){.coding-wrap{padding:30px 22px 60px}.coding-item summary{font-size:16px;padding-right:40px}.coding-desc{padding-right:10px}}
+</style></head>
+<body><header class="topbar"><a class="logo" href="index.html"><img class="scw-logo-img" src="scw-logo-final.svg?v=20260927-1215" alt="SCW"><small>SMIRNOV CUSTOM WORKS</small></a><a class="quote" href="index.html#contact">GET A QUOTE →</a></header>
+<main class="coding-wrap"><a class="back" id="back" href="vehicle.html">← SERVICES</a><h1 id="car">BMW CODING</h1><div class="blue-line"></div><p class="coding-intro">Available coding functions depend on the vehicle equipment and software version. Tap any option to see details.</p>
+<div id="catalog"></div></main>
+<footer class="site-footer"><a class="logo" href="index.html"><img class="scw-logo-img" src="scw-logo-final.svg?v=20260927-1215" alt="SCW"><small>SMIRNOV CUSTOM WORKS</small></a><div class="footer-contact">info@scw-group.com · Cyprus</div><div class="footer-copy">© 2026 SCW Group</div></footer>
+<script>
+const groups=[
+["General",[
+["Auto Start/Stop memory or default OFF","The vehicle can remember the last Auto Start/Stop setting, or the function can be configured to start switched off while remaining available from the button."],
+["Disable Auto Start/Stop activation in ECO PRO","Prevents ECO PRO mode from automatically enabling Auto Start/Stop.","Availability depends on the vehicle software version."],
+["Sport+ mode","Adds Sport+ to the available driving modes where supported. Sport+ combines a sport-oriented vehicle setup with reduced stability-control intervention."],
+["Sport automatic transmission","Enables the sport transmission configuration on compatible vehicles, changing shift behavior in sport modes.","Some vehicles already have this configuration from factory."],
+["Launch Control","Enables the supported launch-control function for rapid standing starts.","Availability depends on engine, transmission and software level."],
+["Start vehicle in ECO PRO","Changes the default driving mode at engine start from Comfort to ECO PRO where supported."],
+["Disable seat-belt reminder","Disables selected acoustic/visual seat-belt reminders without physically bypassing the restraint detection system."],
+["Disable horn confirmation when locking with engine running","Removes the short horn warning produced when the running vehicle is locked from outside on supported software versions."],
+["One-touch window closing with door open","Allows automatic window closing to continue when a door is open, where supported."],
+["AUTO climate button without forced A/C","Removes the link that automatically switches the air-conditioning compressor on when AUTO climate mode is selected."],
+["Fog lights off with high beam","Configures the fog lights to switch off when high beam is activated, where the lighting hardware supports it."],
+["Maximum DRL brightness in additional light modes","Changes daytime-running-light brightness behavior in supported lighting modes."],
+["Cornering lights via fog lamps","Uses the corresponding fog lamp as a cornering light at low speed when steering, on compatible vehicles."],
+["Rear position lights with daytime running lights","Enables rear position lights together with the daytime running lights."],
+["Door-handle lighting in reverse","Activates exterior door-handle illumination when reverse is selected in darkness.","Requires compatible lighting equipment."],
+["Disable headlight washers","Disables the headlight washer function on vehicles equipped with the system."],
+["Fold mirrors without delay","Reduces the hold time required on the remote or door handle to fold the mirrors.","Requires power-folding mirrors."],
+["Reverse mirror dip angle","Adjusts the passenger-side mirror dip angle used while reversing on compatible vehicles."],
+["Turn audio off when driver door opens","Stops multimedia audio when the engine is off and the driver door is opened."],
+["LIM function instead of SET","Changes the supported steering-wheel SET button function to the speed-limiter function.","Requires compatible cruise-control equipment."],
+["Oil service interval adjustment","Adjusts the base oil-service interval where supported. Final service calculation can still vary according to vehicle operating conditions."]
+]],
+["Instrument Cluster",[
+["Digital speedometer","Enables a digital vehicle-speed display in compatible instrument clusters."],
+["M Performance logo","Changes the supported instrument-cluster startup graphic to an M Performance style.","Requires a compatible instrument cluster."]
+]],
+["Multimedia & iDrive",[
+["BMW M startup animation","Changes the supported multimedia startup animation from the standard BMW graphic to an M-style graphic.","Requires a compatible BMW head unit."],
+["Video in Motion","Allows supported video sources to remain available while the vehicle is moving. Use only where lawful and without distracting the driver."],
+["Additional USB video codecs","Enables additional supported video formats for playback from USB media.","Requires a compatible NBT-family head unit."],
+["ID5 to ID6 interface","Changes a compatible NBT EVO system from the ID5 menu presentation to the newer ID6-style interface.","Requires NBT EVO."],
+["Screen Mirroring","Enables supported Android screen mirroring on compatible BMW multimedia hardware.","Requires compatible hardware/software."],
+["DRL on/off option in iDrive","Adds the supported daytime-running-light switch to the vehicle lighting settings."],
+["Acoustic lock/unlock confirmation","Adds the supported menu option for audible locking and unlocking confirmation.","Requires compatible factory alarm hardware."],
+["Rolls-Royce warning sounds","Changes compatible interior notification and parking-warning sounds to the Rolls-Royce sound set.","Requires a compatible head unit."],
+["BMW i warning sounds","Changes compatible interior notification sounds to the BMW i sound set.","Requires a compatible head unit."],
+["M-style sport displays","Enables or changes compatible sport-display graphics to an M-style presentation."],
+["Tyre temperature display","Adds tyre-temperature information alongside pressure information where supported.","Requires compatible tyre-pressure monitoring hardware."],
+["Rear camera trailer-hitch zoom","Adds the supported rear-view-camera zoom function for more precise positioning.","Requires a factory-compatible rear camera."],
+["Apple CarPlay activation","Activates Apple CarPlay on compatible BMW multimedia systems. Full-screen mode can also be enabled when supported.","Requires compatible head unit, software and wireless hardware."],
+["Full-screen Apple CarPlay","Changes an existing compatible CarPlay installation from split-screen presentation to full-screen mode.","Requires an already supported CarPlay-capable system."]
+]]];
+const p=new URLSearchParams(location.search),b=p.get("brand")||"BMW",m=p.get("model")||"2 Series (F45 / F46)";
+car.textContent=b+" "+m+" — CODING";back.href="vehicle.html?brand="+encodeURIComponent(b)+"&model="+encodeURIComponent(m);
+catalog.innerHTML=groups.map(g=>'<section class="coding-section"><h2>'+g[0]+'</h2>'+g[1].map(x=>'<details class="coding-item"><summary>'+x[0]+'</summary><div class="coding-desc">'+x[1]+(x[2]?'<div class="coding-note"><strong>Requirements:</strong> '+x[2]+'</div>':'')+'</div></details>').join("")+'</section>').join("");
+</script></body></html>
