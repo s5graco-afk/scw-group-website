@@ -4,7 +4,16 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>BMW 2 Series F45 / F46 — Multimedia Solution 2 — SCW</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="styles.css?v=20260927-2230">
+<link rel="stylesheet" href="styles.css?v=20261002-1625">
+<style>
+.oem-gallery{position:relative;overflow:hidden;background:#0f1316;touch-action:pan-y}
+.oem-gallery-track{display:flex;transition:transform .35s ease}
+.oem-gallery-slide{min-width:100%;display:flex;align-items:center;justify-content:center}
+.oem-gallery-slide img{width:100%;height:auto!important;display:block;object-fit:contain}
+.gallery-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.45);background:rgba(8,10,12,.7);color:#fff;font-size:30px;line-height:40px;cursor:pointer}.gallery-prev{left:14px}.gallery-next{right:14px}
+.gallery-dots{display:flex;justify-content:center;gap:9px;padding:14px 0 2px}.gallery-dot{width:9px;height:9px;border:0;border-radius:50%;background:#555;cursor:pointer;padding:0}.gallery-dot.active{background:#f01827}
+@media(max-width:700px){.gallery-arrow{width:38px;height:38px;font-size:25px}.gallery-prev{left:8px}.gallery-next{right:8px}}
+</style>
 </head>
 <body>
 <header class="topbar">
@@ -16,7 +25,16 @@
 <h1 id="car">Multimedia</h1>
 <div class="blue-line"></div>
 <section class="oem-detail-card">
-<img src="assets/IMG_3375.jpeg?v=1" alt="BMW 2 Series F45 F46 multimedia" width="1024" height="768">
+<div class="oem-gallery" id="oem-gallery">
+<div class="oem-gallery-track" id="gallery-track">
+<div class="oem-gallery-slide"><img src="assets/IMG_3381.jpeg?v=1" alt="BMW F45 F46 multimedia CarPlay menu"></div>
+<div class="oem-gallery-slide"><img src="assets/IMG_3382.jpeg?v=1" alt="BMW F45 F46 multimedia"></div>
+<div class="oem-gallery-slide"><img src="assets/IMG_3392.jpeg?v=1" alt="BMW F45 F46 multimedia"></div>
+</div>
+<button class="gallery-arrow gallery-prev" type="button" aria-label="Previous photo">‹</button>
+<button class="gallery-arrow gallery-next" type="button" aria-label="Next photo">›</button>
+</div>
+<div class="gallery-dots"><button class="gallery-dot active" aria-label="Photo 1"></button><button class="gallery-dot" aria-label="Photo 2"></button><button class="gallery-dot" aria-label="Photo 3"></button></div>
 <div class="oem-detail-caption">Replacing the factory display with a new one is the perfect way to refresh your car’s multimedia system. The stunning 12-inch touchscreen blends seamlessly with the interior, bringing modern technology to a timeless classic.</div>
 </section>
 <section class="oem-additional-section">
@@ -32,5 +50,8 @@
 let p=new URLSearchParams(location.search),b=p.get("brand")||"",m=p.get("model")||"";
 car.textContent=(b+" "+m).trim()||"Multimedia";
 document.getElementById("back-link").href="solution.html?brand="+encodeURIComponent(b)+"&model="+encodeURIComponent(m);
+</script>
+<script>
+(()=>{const g=document.getElementById("oem-gallery"),t=document.getElementById("gallery-track"),d=[...document.querySelectorAll(".gallery-dot")];if(!g||!t)return;let i=0,start=0;const show=n=>{i=(n+d.length)%d.length;t.style.transform="translateX("+(-i*100)+"%)";d.forEach((x,j)=>x.classList.toggle("active",j===i));};g.querySelector(".gallery-prev").onclick=()=>show(i-1);g.querySelector(".gallery-next").onclick=()=>show(i+1);d.forEach((x,j)=>x.onclick=()=>show(j));g.addEventListener("touchstart",e=>start=e.touches[0].clientX,{passive:true});g.addEventListener("touchend",e=>{let dx=e.changedTouches[0].clientX-start;if(Math.abs(dx)>45)show(i+(dx<0?1:-1));},{passive:true});})();
 </script>
 </body></html>
