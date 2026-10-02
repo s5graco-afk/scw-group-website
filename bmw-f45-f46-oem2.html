@@ -12,6 +12,7 @@
 .oem-gallery-slide img{width:100%;height:auto!important;display:block;object-fit:contain}
 .gallery-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.45);background:rgba(8,10,12,.7);color:#fff;font-size:30px;line-height:40px;cursor:pointer}.gallery-prev{left:14px}.gallery-next{right:14px}
 .gallery-dots{display:flex;justify-content:center;gap:9px;padding:14px 0 2px}.gallery-dot{width:9px;height:9px;border:0;border-radius:50%;background:#555;cursor:pointer;padding:0}.gallery-dot.active{background:#f01827}
+.option-list{padding:4px 0}.option-item{border-top:1px solid rgba(255,255,255,.12)}.option-item:last-child{border-bottom:1px solid rgba(255,255,255,.12)}.option-item summary{list-style:none;cursor:pointer;padding:18px 4px 18px 27px;position:relative;font-weight:700;letter-spacing:.01em}.option-item summary::-webkit-details-marker{display:none}.option-item summary:before{content:"";position:absolute;left:5px;top:50%;transform:translateY(-50%);width:9px;height:9px;border-radius:50%;background:#f01827}.option-item summary:after{content:"+";position:absolute;right:7px;font-size:22px;font-weight:400;top:50%;transform:translateY(-50%)}.option-item[open] summary:after{content:"−"}.option-description{padding:0 34px 18px 27px;color:#b9bec4;line-height:1.55}
 @media(max-width:700px){.gallery-arrow{width:38px;height:38px;font-size:25px}.gallery-prev{left:8px}.gallery-next{right:8px}}
 </style>
 </head>
@@ -35,7 +36,11 @@
 <button class="gallery-arrow gallery-next" type="button" aria-label="Next photo">›</button>
 </div>
 <div class="gallery-dots"><button class="gallery-dot active" aria-label="Photo 1"></button><button class="gallery-dot" aria-label="Photo 2"></button><button class="gallery-dot" aria-label="Photo 3"></button></div>
-<div class="oem-detail-caption">Replacing the factory display with a new one is the perfect way to refresh your car’s multimedia system. The stunning 12-inch touchscreen blends seamlessly with the interior, bringing modern technology to a timeless classic.</div>
+<div class="oem-detail-caption option-list">
+<details class="option-item"><summary>Region Change</summary><div class="option-description">Change the multimedia system region from any region to any other region. Adds the appropriate language selection, regional radio frequencies and regional navigation maps.</div></details>
+<details class="option-item"><summary>Apple CarPlay Activation</summary><div class="option-description">Activation of the factory Apple CarPlay functionality in the original BMW multimedia system.</div></details>
+<details class="option-item"><summary>Radio Frequency Change</summary><div class="option-description">Changes the radio frequency settings to match the frequencies used in the selected region.</div></details>
+</div>
 </section>
 <section class="oem-additional-section">
 <h2 class="oem-additional-title">Additional Equipment</h2>
