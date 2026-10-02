@@ -107,7 +107,7 @@ const g02Groups=[
 ["BMW Drive Recorder","Activates supported 360-degree drive recording functionality.","Requires surround-view cameras."],
 ["X4M F98 interface","Changes supported multimedia graphics to an X4M F98 / BMW M-style interface.","A software update may be required depending on the vehicle."],
 ["Offline driver profiles","Creates supported local driver profiles when online profile services are unavailable."]
-]];
+]]];
 const p=new URLSearchParams(location.search),b=p.get("brand")||"BMW",m=p.get("model")||"2 Series (F45 / F46)";
 car.textContent=b+" "+m+" — CODING";back.href="vehicle.html?brand="+encodeURIComponent(b)+"&model="+encodeURIComponent(m);
 const groups=(b==="BMW"&&m==="X4 (G02)")?g02Groups:defaultGroups;
