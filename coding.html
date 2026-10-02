@@ -14,7 +14,7 @@
 <div id="catalog"></div></main>
 <footer class="site-footer"><a class="logo" href="index.html"><img class="scw-logo-img" src="scw-logo-final.svg?v=20260927-1215" alt="SCW"><small>SMIRNOV CUSTOM WORKS</small></a><div class="footer-contact">info@scw-group.com · Cyprus</div><div class="footer-copy">© 2026 SCW Group</div></footer>
 <script>
-const groups=[
+const defaultGroups=[
 ["General",[
 ["Auto Start/Stop memory or default OFF","The vehicle can remember the last Auto Start/Stop setting, or the function can be configured to start switched off while remaining available from the button."],
 ["Disable Auto Start/Stop activation in ECO PRO","Prevents ECO PRO mode from automatically enabling Auto Start/Stop.","Availability depends on the vehicle software version."],
@@ -59,7 +59,57 @@ const groups=[
 ["Apple CarPlay activation","Activates Apple CarPlay on compatible BMW multimedia systems. Full-screen mode can also be enabled when supported.","Requires compatible head unit, software and wireless hardware."],
 ["Full-screen Apple CarPlay","Changes an existing compatible CarPlay installation from split-screen presentation to full-screen mode.","Requires an already supported CarPlay-capable system."]
 ]]];
+const g02Groups=[
+["General",[
+["Auto Start/Stop memory / OFF","Remembers the last Auto Start/Stop setting or disables the function where supported.","Availability depends on the vehicle software version."],
+["Sport Plus & Comfort Plus","Adds Sport Plus and/or Comfort Plus driving modes where supported."],
+["Sport automatic transmission & Launch Control","Enables the factory sport transmission configuration and supported Launch Control function."],
+["Default driving mode at startup","Changes the driving mode used when the vehicle starts from Comfort to another supported mode."],
+["Disable seat-belt reminder","Disables selected acoustic and visual seat-belt reminders without changing restraint detection."],
+["Disable horn when locking with engine running","Removes the short horn confirmation when the running vehicle is locked from outside."],
+["One-touch window closing with door open","Allows automatic window closing to continue with a door open where supported."],
+["Fog lights off with high beam","Switches fog lights off automatically when high beam is activated."],
+["Rear position lights with DRL","Enables rear position lights together with daytime running lights."],
+["Trunk closing without holding the button","Allows supported power tailgate closing from the remote or interior button without continuously holding it.","Requires power tailgate (option 316)."],
+["Reverse mirror dip angle","Adjusts the passenger-side mirror dip angle used while reversing.","Requires mirror package option 430 or 4T8."],
+["Automatic steering-wheel & seat heating","Enables automatic heating based on configured outside-temperature conditions.","Requires heated steering wheel (248) and heated seats (494/4HA)."],
+["Automatic seat ventilation","Enables automatic seat ventilation based on configured outside-temperature conditions.","Requires active seat ventilation (453)."],
+["Ambient lighting color change","Changes supported factory ambient-lighting colors.","Requires lighting package (4UR)."],
+["BMW M logo on Display Key","Changes the supported Display Key logo to BMW M.","Requires Display Key (3DS) or auxiliary heating (536)."],
+["Next speed-limit prediction","Displays the upcoming speed limit using navigation-map data.","Requires 5AS, 5DF or 5AU; current navigation maps are recommended."],
+["Automatic Speed Limit Assist (aSLA)","Allows compatible cruise control to adapt the set speed to detected speed limits.","Requires 5DF or 5AU."],
+["Lane Change Assistant","Enables supported assisted lane changes under the required driving conditions.","Requires Driving Assistant Professional (5AU)."],
+["Engine sound control menu","Adds a supported menu for adjusting engine/exhaust sound independently of driving mode.","Requires compatible exhaust/sound hardware and MGU."],
+["IconicSounds Sport","Activates or changes supported synthesized engine sound in the cabin.","Availability depends on vehicle hardware and software."],
+["Alpina adaptive suspension software","Applies a compatible Alpina calibration to the adaptive suspension.","Requires Adaptive M Suspension (2VF)."],
+["Welcome-light animation change","Changes the supported welcome-light animation."],
+["Oil service interval adjustment","Adjusts the base oil-service interval where supported."],
+["Remote engine start","Enables supported remote start functions for compatible petrol vehicles.","Requires a compatible factory petrol-engine configuration."]
+]],
+["Instrument Cluster",[
+["BMW M logo","Adds the supported BMW M logo to the instrument cluster."],
+["Faster digital speedometer refresh","Reduces the supported digital speed display refresh interval for quicker updates."],
+["BMW M Performance interface","Enables the supported M Performance instrument-cluster interface.","Requires BMW Live Cockpit Professional (6U3)."],
+["BMW M interface","Enables the supported BMW M-style instrument-cluster interface.","Requires BMW Live Cockpit Professional (6U3)."],
+["Alpina interface","Enables the supported Alpina-style instrument-cluster interface.","Requires BMW Live Cockpit Professional (6U3)."],
+["Assisted Driving View","Displays supported lane and surrounding-vehicle information in the instrument cluster.","Requires Driving Assistant Professional (5AU)."]
+]],
+["Multimedia & iDrive",[
+["BMW M startup screen","Changes the supported multimedia startup screen to the BMW M logo."],
+["Video in Motion","Allows supported USB video and Screen Mirroring video to remain available while moving. Use only where lawful and without distracting the driver.","Requires BMW Live Cockpit Professional (6U3)."],
+["DRL on/off option in iDrive","Adds the supported daytime-running-light on/off setting to the lighting menu."],
+["Five-flash turn signal option","Adds a five-flash setting for the one-touch turn signal."],
+["Acoustic lock/unlock confirmation","Adds the supported audible lock/unlock setting.","Requires factory alarm (302)."],
+["Tyre temperature display","Adds tyre-temperature information where supported.","Requires tyre-pressure monitoring (2VB)."],
+["Rear camera trailer-hitch zoom","Adds the supported rear-camera zoom function.","Requires rear camera (3AG) or Parking Assistant (5DM)."],
+["CarPlay & Android Auto connection stability","Adjusts supported wireless settings to improve connection stability in high-interference environments.","Requires Apple CarPlay and/or Android Auto."],
+["Apple CarPlay activation","Activates Apple CarPlay on compatible factory BMW multimedia hardware.","Requires WLAN antenna for best performance."],
+["BMW Drive Recorder","Activates supported 360-degree drive recording functionality.","Requires surround-view cameras."],
+["X4M F98 interface","Changes supported multimedia graphics to an X4M F98 / BMW M-style interface.","A software update may be required depending on the vehicle."],
+["Offline driver profiles","Creates supported local driver profiles when online profile services are unavailable."]
+]];
 const p=new URLSearchParams(location.search),b=p.get("brand")||"BMW",m=p.get("model")||"2 Series (F45 / F46)";
 car.textContent=b+" "+m+" — CODING";back.href="vehicle.html?brand="+encodeURIComponent(b)+"&model="+encodeURIComponent(m);
+const groups=(b==="BMW"&&m==="X4 (G02)")?g02Groups:defaultGroups;
 catalog.innerHTML=groups.map(g=>'<section class="coding-section"><h2>'+g[0]+'</h2>'+g[1].map(x=>'<details class="coding-item"><summary>'+x[0]+'</summary><div class="coding-desc">'+x[1]+(x[2]?'<div class="coding-note"><strong>Requirements:</strong> '+x[2]+'</div>':'')+'</div></details>').join("")+'</section>').join("");
 </script></body></html>
