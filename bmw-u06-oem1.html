@@ -28,14 +28,12 @@
 <section class="oem-detail-card">
 <div class="oem-gallery" id="oem-gallery">
 <div class="oem-gallery-track" id="gallery-track">
-<div class="oem-gallery-slide"><img src="assets/IMG_6832.jpeg?v=1" alt="BMW 2 Series U06 Active Tourer multimedia"></div>
-<div class="oem-gallery-slide"><img src="assets/IMG_6830.jpeg?v=1" alt="BMW 2 Series U06 Active Tourer multimedia"></div>
-<div class="oem-gallery-slide"><img src="assets/IMG_6829.jpeg?v=1" alt="BMW 2 Series U06 Active Tourer multimedia"></div>
+<div class="oem-gallery-slide"><img src="assets/90F3FD48-F818-4941-BE05-349CE0049820.png?v=2" alt="BMW 2 Series U06 Active Tourer multimedia"></div>
 </div>
 <button class="gallery-arrow gallery-prev" type="button" aria-label="Previous photo">‹</button>
 <button class="gallery-arrow gallery-next" type="button" aria-label="Next photo">›</button>
 </div>
-<div class="gallery-dots"><button class="gallery-dot active" aria-label="Photo 1"></button><button class="gallery-dot" aria-label="Photo 2"></button><button class="gallery-dot" aria-label="Photo 3"></button></div>
+<div class="gallery-dots"><button class="gallery-dot active" aria-label="Photo 1"></button></div>
 <div class="oem-detail-caption option-list">
 <details class="option-item"><summary>Region Change</summary><div class="option-description">Change the multimedia system region from any region to any other region. Adds the appropriate language selection, regional radio frequencies and regional navigation maps.</div></details>
 <details class="option-item"><summary>Apple CarPlay Activation</summary><div class="option-description">Activation of the factory Apple CarPlay functionality in the original BMW multimedia system.</div></details>
@@ -66,6 +64,6 @@ car.textContent=(b+" "+m).trim()||"Multimedia";
 document.getElementById("back-link").href="solution.html?brand="+encodeURIComponent(b)+"&model="+encodeURIComponent(m);
 </script>
 <script>
-(()=>{const g=document.getElementById("oem-gallery"),t=document.getElementById("gallery-track"),d=[...document.querySelectorAll(".gallery-dot")];if(!g||!t)return;let i=0,start=0;const show=n=>{i=(n+d.length)%d.length;t.style.transform="translateX("+(-i*100)+"%)";d.forEach((x,j)=>x.classList.toggle("active",j===i));};g.querySelector(".gallery-prev").onclick=()=>show(i-1);g.querySelector(".gallery-next").onclick=()=>show(i+1);d.forEach((x,j)=>x.onclick=()=>show(j));g.addEventListener("touchstart",e=>start=e.touches[0].clientX,{passive:true});g.addEventListener("touchend",e=>{let dx=e.changedTouches[0].clientX-start;if(Math.abs(dx)>45)show(i+(dx<0?1:-1));},{passive:true});})();
+(()=>{const g=document.getElementById("oem-gallery"),t=document.getElementById("gallery-track"),d=[...document.querySelectorAll(".gallery-dot")];if(!g||!t)return;let i=0,start=0;const show=n=>{i=(n+d.length)%d.length;t.style.transform="translateX("+(-i*100)+"%)";d.forEach((x,j)=>x.classList.toggle("active",j===i));};g.querySelector(".gallery-prev").style.display="none";g.querySelector(".gallery-next").style.display="none";d.forEach((x,j)=>x.onclick=()=>show(j));g.addEventListener("touchstart",e=>start=e.touches[0].clientX,{passive:true});g.addEventListener("touchend",e=>{let dx=e.changedTouches[0].clientX-start;if(Math.abs(dx)>45)show(i+(dx<0?1:-1));},{passive:true});})();
 </script>
 </body></html>
