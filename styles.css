@@ -807,3 +807,15 @@ main{
  .a4-car-photo{width:100%;height:180px;overflow:visible}
  .a4-car-photo img{width:100%;height:170px;object-fit:contain;object-position:center;transform:scale(1.05)}
 }
+
+
+/* BMW E90/E91/E92/E93 — match standard F45 vehicle hero proportions */
+#e90-profile.f45-profile{grid-template-columns:46% 54%!important;width:100%!important;max-width:none!important;min-height:190px!important;gap:0!important;margin:28px 0 32px!important;align-items:center!important}
+#e90-profile .f45-profile-copy{padding-right:4px;position:relative;z-index:2}
+#e90-profile .f45-car-photo{width:100%;height:180px;overflow:visible!important}
+#e90-profile .f45-car-photo img{width:100%!important;height:170px!important;max-width:none;object-fit:contain!important;object-position:center!important;clip-path:none!important;transform:scale(1.05)!important}
+@media(min-width:901px){
+ #e90-profile.f45-profile{grid-template-columns:minmax(0,1fr) 300px!important;gap:38px!important;max-width:760px!important;margin:32px 0 28px!important}
+ #e90-profile .f45-car-photo{height:170px}
+ #e90-profile .f45-car-photo img{height:100%!important;transform:scale(1.06)!important}
+}
