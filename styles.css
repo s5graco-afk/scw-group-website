@@ -587,3 +587,17 @@ main{
  .q5-car-photo img{width:150px!important;max-height:90px!important}
  .q5-car-photo a{font-size:6px!important;margin-top:1px!important}
 }
+
+/* Audi Q5 compact profile hotfix */
+#q5-profile.q5-profile{display:grid!important;grid-template-columns:minmax(0,1fr) 145px!important;gap:12px!important;align-items:center!important;max-width:520px!important;margin:24px 0 30px!important}
+#q5-profile .q5-car-photo{width:145px!important;height:105px!important;min-height:0!important;overflow:hidden!important;background:none!important}
+#q5-profile .q5-car-photo img{width:145px!important;height:95px!important;max-width:145px!important;max-height:95px!important;object-fit:contain!important;margin:0!important}
+#q5-profile .q5-car-photo a{display:none!important}
+#q5-profile .q5-profile-copy{min-width:0!important}
+#q5-profile .q5-profile-copy strong{font-size:28px!important;line-height:1!important}
+#q5-profile .q5-profile-copy p{font-size:10px!important;line-height:1.35!important;margin:8px 0 0!important}
+@media(min-width:901px){
+ #q5-profile.q5-profile{grid-template-columns:minmax(0,1fr) 300px!important;max-width:760px!important}
+ #q5-profile .q5-car-photo{width:300px!important;height:170px!important}
+ #q5-profile .q5-car-photo img{width:300px!important;height:160px!important;max-width:300px!important;max-height:160px!important}
+}
