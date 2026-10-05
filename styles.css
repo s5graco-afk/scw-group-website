@@ -552,3 +552,17 @@ main{
 .tuning-table tbody tr:last-child td{border-bottom:0}
 .tuning-note{margin:18px 0 0;color:#8e959a;font-size:14px;line-height:1.5}
 @media(max-width:900px){.tuning-table th,.tuning-table td{padding:14px 16px}.tuning-table td{font-size:16px}}
+
+/* Audi Q5 8R vehicle profile experiment */
+#q5-profile{grid-template-columns:minmax(0,1fr) 300px;align-items:center;gap:30px;margin:34px 0 22px;max-width:760px}
+.q5-profile-copy span{display:block;color:#9ca3a8;font-size:15px;margin-bottom:5px}
+.q5-profile-copy strong{display:block;font-size:42px;line-height:1.05;letter-spacing:-1px}
+.q5-profile-copy small{display:block;margin-top:8px;color:#a8adb1;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+.q5-profile-copy p{margin:12px 0 0;color:#777f84;font-size:13px}
+.q5-car-art{height:150px;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse at center,rgba(240,24,39,.10),transparent 64%)}
+.q5-car-shape{position:relative;width:255px;height:78px;border:2px solid #d9dcde;border-radius:46% 44% 18px 22px;transform:skewX(-5deg);box-shadow:inset 0 -8px 0 rgba(240,24,39,.12)}
+.q5-car-shape:before{content:"";position:absolute;left:45px;top:-43px;width:137px;height:52px;border:2px solid #d9dcde;border-bottom:0;border-radius:55px 72px 0 0;transform:skewX(14deg);background:#111619}
+.q5-window{position:absolute;left:67px;top:-34px;width:95px;height:34px;border-radius:38px 48px 3px 3px;background:#262d31;z-index:2}
+.q5-wheel{position:absolute;bottom:-20px;width:40px;height:40px;border-radius:50%;background:#0a0d0f;border:7px solid #777f84;box-shadow:0 0 0 2px #d9dcde}
+.q5-wheel.w1{left:35px}.q5-wheel.w2{right:35px}
+@media(max-width:900px){#q5-profile{grid-template-columns:1fr 150px;gap:10px;margin:30px 0 18px}.q5-profile-copy strong{font-size:34px}.q5-profile-copy span{font-size:13px}.q5-profile-copy small{font-size:12px}.q5-profile-copy p{font-size:11px;line-height:1.35}.q5-car-art{height:100px;overflow:hidden}.q5-car-shape{width:135px;height:43px}.q5-car-shape:before{left:24px;top:-24px;width:74px;height:29px}.q5-window{left:37px;top:-18px;width:49px;height:18px}.q5-wheel{bottom:-12px;width:24px;height:24px;border-width:4px}.q5-wheel.w1{left:18px}.q5-wheel.w2{right:18px}}
