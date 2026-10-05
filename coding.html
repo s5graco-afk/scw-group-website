@@ -160,6 +160,6 @@ const g01Groups=[
 ]]];;
 const p=new URLSearchParams(location.search),b=p.get("brand")||"BMW",m=p.get("model")||"2 Series (F45 / F46)";
 car.textContent=b+" "+m+" — CODING";back.href="vehicle.html?brand="+encodeURIComponent(b)+"&model="+encodeURIComponent(m);
-const groups=(b==="Audi"&&(m==="Q5 (8R)"||m==="A4 (B8 / 8K)"))?[]:(b==="BMW"&&m==="X3 (G01)")?g01Groups:(b==="BMW"&&m==="X4 (G02)")?g02Groups:defaultGroups;
+const groups=[];
 catalog.innerHTML=groups.map(g=>'<section class="coding-section"><h2>'+g[0]+'</h2>'+g[1].map(x=>'<details class="coding-item"><summary>'+x[0]+'</summary><div class="coding-desc">'+x[1]+(x[2]?'<div class="coding-note"><strong>Requirements:</strong> '+x[2]+'</div>':'')+'</div></details>').join("")+'</section>').join("");
 </script></body></html>
