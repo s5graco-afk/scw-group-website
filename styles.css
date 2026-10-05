@@ -813,3 +813,14 @@ main{
 @media(max-width:900px){
  #e90-profile .f45-car-photo img{transform:scale(.62)!important;transform-origin:center center!important}
 }
+
+/* Audi A4 hero alignment correction — match BMW profile footprint */
+#a4-profile .a4-car-photo img{transform:scale(1.18) translateY(2px)!important;transform-origin:center center!important}
+@media(max-width:900px){
+ #a4-profile .a4-car-photo{height:180px!important;display:flex!important;align-items:center!important;justify-content:center!important}
+ #a4-profile .a4-car-photo img{
+   width:112%!important;height:170px!important;max-width:none!important;
+   object-fit:contain!important;object-position:center center!important;
+   transform:scale(1.12) translateY(2px)!important;transform-origin:center center!important
+ }
+}
