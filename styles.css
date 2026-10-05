@@ -717,3 +717,25 @@ main{
  .f32-car-photo{width:100%;height:180px;overflow:visible}
  .f32-car-photo img{width:100%;height:170px;object-fit:contain;object-position:center;transform:scale(1.05)}
 }
+
+/* BMW X2 F39 vehicle profile */
+#f39-profile.f39-profile{grid-template-columns:minmax(0,1fr) 300px;align-items:center;gap:38px;max-width:760px;margin:32px 0 28px}
+.f39-profile-copy span{display:block;color:#8e959a;font-size:12px;letter-spacing:3px;margin-bottom:8px}
+.f39-profile-copy strong{display:block;font-size:42px;line-height:1.02;letter-spacing:-1px}
+.f39-profile-copy strong b{font-weight:500;color:#aeb4b8}
+.f39-profile-copy small{display:block;margin-top:10px;color:#a8adb1;font-size:13px;letter-spacing:.08em}
+.f39-profile-copy p{margin:12px 0 0;color:#8e959a;font-size:13px;line-height:1.5}
+.f39-car-photo{height:170px;display:flex;align-items:center;justify-content:center;overflow:visible;position:relative;background:radial-gradient(ellipse at 52% 62%,rgba(240,24,39,.10),transparent 62%)}
+.f39-car-photo:after{content:"";position:absolute;left:8%;right:8%;bottom:18px;height:18px;background:radial-gradient(ellipse,rgba(0,0,0,.8),transparent 68%);filter:blur(5px)}
+.f39-car-photo img{position:relative;z-index:1;width:100%;height:100%;object-fit:contain;object-position:center;transform:scale(1.06)}
+@media(max-width:900px){
+ #f39-profile.f39-profile{grid-template-columns:46% 54%!important;width:100%!important;max-width:none!important;min-height:190px!important;gap:0!important;margin:28px 0 32px!important;align-items:center!important}
+ .f39-profile-copy{padding-right:4px;position:relative;z-index:2}
+ .f39-profile-copy span{font-size:11px;letter-spacing:4px;margin-bottom:10px}
+ .f39-profile-copy strong{font-size:29px;line-height:1.05;letter-spacing:-.7px}
+ .f39-profile-copy strong b{display:block;margin-top:3px}
+ .f39-profile-copy small{font-size:12px;margin-top:11px}
+ .f39-profile-copy p{font-size:10.5px;line-height:1.4;margin-top:12px}
+ .f39-car-photo{width:100%;height:180px;overflow:visible}
+ .f39-car-photo img{width:100%;height:170px;object-fit:contain;object-position:center;transform:scale(1.05)}
+}
