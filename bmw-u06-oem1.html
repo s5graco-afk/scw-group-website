@@ -15,7 +15,28 @@
 .option-list{padding:4px 0}.option-item{border-top:1px solid rgba(255,255,255,.12)}.option-item:last-child{border-bottom:1px solid rgba(255,255,255,.12)}.option-item summary{list-style:none;cursor:pointer;padding:18px 4px 18px 27px;position:relative;font-weight:700;letter-spacing:.01em}.option-item summary::-webkit-details-marker{display:none}.option-item summary:before{content:"";position:absolute;left:5px;top:50%;transform:translateY(-50%);width:9px;height:9px;border-radius:50%;background:#f01827}.option-item summary:after{content:"+";position:absolute;right:7px;font-size:22px;font-weight:400;top:50%;transform:translateY(-50%)}.option-item[open] summary:after{content:"−"}.option-description{padding:0 34px 18px 27px;color:#b9bec4;line-height:1.55}
 @media(max-width:700px){.gallery-arrow{width:38px;height:38px;font-size:25px}.gallery-prev{left:8px}.gallery-next{right:8px}}
 </style>
-</head>
+<style id="scw-u06-profile-fix">
+.scw-u06-shared-profile.u06-profile{grid-template-columns:minmax(0,1fr) 300px;align-items:center;gap:38px;max-width:760px;margin:32px 0 28px}
+.scw-u06-shared-profile .u06-profile-copy span{display:block;color:#8e959a;font-size:12px;letter-spacing:3px;margin-bottom:8px}
+.scw-u06-shared-profile .u06-profile-copy strong{display:block;font-size:42px;line-height:1.02;letter-spacing:-1px}
+.scw-u06-shared-profile .u06-profile-copy strong b{font-weight:500;color:#aeb4b8}
+.scw-u06-shared-profile .u06-profile-copy small{display:block;margin-top:10px;color:#a8adb1;font-size:13px;letter-spacing:.08em}
+.scw-u06-shared-profile .u06-profile-copy p{margin:12px 0 0;color:#8e959a;font-size:13px;line-height:1.5}
+.scw-u06-shared-profile .u06-car-photo{height:170px;display:flex;align-items:center;justify-content:center;overflow:visible;position:relative;background:radial-gradient(ellipse at 52% 62%,rgba(240,24,39,.10),transparent 62%)}
+.scw-u06-shared-profile .u06-car-photo:after{content:"";position:absolute;left:8%;right:8%;bottom:18px;height:18px;background:radial-gradient(ellipse,rgba(0,0,0,.8),transparent 68%);filter:blur(5px)}
+.scw-u06-shared-profile .u06-car-photo img{position:relative;z-index:1;width:100%;height:100%;object-fit:contain;object-position:center;transform:scale(1.06)}
+@media(max-width:900px){
+.scw-u06-shared-profile.u06-profile{grid-template-columns:46% 54%!important;width:100%!important;max-width:none!important;min-height:190px!important;gap:0!important;margin:28px 0 32px!important;align-items:center!important}
+.scw-u06-shared-profile .u06-profile-copy{padding-right:4px;position:relative;z-index:2}
+.scw-u06-shared-profile .u06-profile-copy span{font-size:11px;letter-spacing:4px;margin-bottom:10px}
+.scw-u06-shared-profile .u06-profile-copy strong{font-size:29px;line-height:1.05;letter-spacing:-.7px}
+.scw-u06-shared-profile .u06-profile-copy strong b{display:block;margin-top:3px}
+.scw-u06-shared-profile .u06-profile-copy small{font-size:12px;margin-top:11px}
+.scw-u06-shared-profile .u06-profile-copy p{font-size:10.5px;line-height:1.4;margin-top:12px}
+.scw-u06-shared-profile .u06-car-photo{width:100%;height:180px;overflow:visible}
+.scw-u06-shared-profile .u06-car-photo img{width:100%;height:170px;object-fit:contain;object-position:center;transform:scale(1.05)}
+}
+</style></head>
 <body>
 <header class="topbar">
 <a class="logo" href="index.html"><img class="scw-logo-img" src="scw-logo-final.svg?v=20260927-1215" alt="SCW"><small>SMIRNOV CUSTOM WORKS</small></a>
@@ -52,4 +73,4 @@ document.getElementById("back-link").href="solution.html?brand="+encodeURICompon
 <script>
 (()=>{const g=document.getElementById("oem-gallery"),t=document.getElementById("gallery-track"),d=[...document.querySelectorAll(".gallery-dot")];if(!g||!t)return;let i=0,start=0;const show=n=>{i=(n+d.length)%d.length;t.style.transform="translateX("+(-i*100)+"%)";d.forEach((x,j)=>x.classList.toggle("active",j===i));};g.querySelector(".gallery-prev").style.display="none";g.querySelector(".gallery-next").style.display="none";d.forEach((x,j)=>x.onclick=()=>show(j));g.addEventListener("touchstart",e=>start=e.touches[0].clientX,{passive:true});g.addEventListener("touchend",e=>{let dx=e.changedTouches[0].clientX-start;if(Math.abs(dx)>45)show(i+(dx<0?1:-1));},{passive:true});})();
 </script>
-</body></html>
+<script>(function(){const q=new URLSearchParams(location.search),brand=q.get("brand")||"",model=q.get("model")||"";if(brand==="BMW"&&model==="2 Series (U06 Active Tourer)"){const p=document.querySelector(".scw-u06-shared-profile");if(p)p.style.setProperty("display","grid","important");const h=document.getElementById("car");if(h)h.style.display="none";}})();</script></body></html>
