@@ -10,7 +10,7 @@
 @media(max-width:700px){.coding-wrap{padding:30px 22px 60px}.coding-item summary{font-size:16px;padding-right:40px}.coding-desc{padding-right:10px}}
 </style></head>
 <body><header class="topbar"><a class="logo" href="index.html"><img class="scw-logo-img" src="scw-logo-final.svg?v=20260927-1215" alt="SCW"><small>SMIRNOV CUSTOM WORKS</small></a><a class="quote" href="https://wa.me/35795956503?text=Hi%21%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener">GET A QUOTE →</a></header>
-<main class="coding-wrap"><a class="back" id="back" href="vehicle.html">← SERVICES</a><h1 id="car">BMW CODING</h1><div class="blue-line"></div><p class="coding-intro">Available coding functions depend on the vehicle equipment and software version. Tap any option to see details.</p>
+<main class="coding-wrap"><a class="back" id="back" href="vehicle.html">← SERVICES</a><div class="f45-profile scw-f45-shared-profile" style="display:none"><div class="f45-profile-copy"><span>BMW</span><strong>2 Series <b>(F45 / F46)</b></strong><small>2014 – 2021</small><p>Active Tourer / Gran Tourer<br>Compact premium MPV</p></div><div class="f45-car-photo"><img src="assets/A8BB3108-5CD6-4B98-8E99-F162804733B7.png?v=1" alt="BMW 2 Series Active Tourer F45 F46"></div></div><h1 id="car">BMW CODING</h1><div class="blue-line"></div><p class="coding-intro">Available coding functions depend on the vehicle equipment and software version. Tap any option to see details.</p>
 <div id="catalog"></div></main>
 <footer class="site-footer"><a class="logo" href="index.html"><img class="scw-logo-img" src="scw-logo-final.svg?v=20260927-1215" alt="SCW"><small>SMIRNOV CUSTOM WORKS</small></a><div class="footer-contact">info@scw-group.com · Cyprus</div><div class="footer-copy">© 2026 SCW Group</div></footer>
 <script>
@@ -162,4 +162,4 @@ const p=new URLSearchParams(location.search),b=p.get("brand")||"BMW",m=p.get("mo
 car.textContent=b+" "+m+" — CODING";back.href="vehicle.html?brand="+encodeURIComponent(b)+"&model="+encodeURIComponent(m);
 const groups=[];
 catalog.innerHTML=groups.map(g=>'<section class="coding-section"><h2>'+g[0]+'</h2>'+g[1].map(x=>'<details class="coding-item"><summary>'+x[0]+'</summary><div class="coding-desc">'+x[1]+(x[2]?'<div class="coding-note"><strong>Requirements:</strong> '+x[2]+'</div>':'')+'</div></details>').join("")+'</section>').join("");
-</script></body></html>
+</script><script>(function(){const q=new URLSearchParams(location.search),brand=q.get("brand")||"",model=q.get("model")||"";if(brand==="BMW"&&model==="2 Series (F45 / F46)"){const p=document.querySelector(".scw-f45-shared-profile");if(p)p.style.setProperty("display","grid","important");const h=document.getElementById("car");if(h)h.style.display="none";}})();</script></body></html>
