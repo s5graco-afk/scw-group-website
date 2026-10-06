@@ -659,15 +659,15 @@ main{
 }
 
 /* F45/F46 transparent hero image: show full vehicle */
-#f45-profile .f45-car-photo,#f30-profile .f45-car-photo{overflow:visible!important}
-#f45-profile .f45-car-photo img,#f30-profile .f45-car-photo img{
+#f45-profile .f45-car-photo{overflow:visible!important}
+#f45-profile .f45-car-photo img img{
   width:100%!important;height:100%!important;
   object-fit:contain!important;object-position:center!important;
   clip-path:none!important;transform:scale(1.06)!important;
 }
 @media(max-width:900px){
- #f45-profile .f45-car-photo,#f30-profile .f45-car-photo{overflow:visible!important}
- #f45-profile .f45-car-photo img,#f30-profile .f45-car-photo img{
+ #f45-profile .f45-car-photo{overflow:visible!important}
+ #f45-profile .f45-car-photo img img{
    width:100%!important;height:170px!important;
    object-fit:contain!important;object-position:center!important;
    clip-path:none!important;transform:scale(1.05)!important;
