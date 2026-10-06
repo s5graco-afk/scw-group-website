@@ -6,15 +6,23 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css?v=20260927-2230">
 <style id="scw-f45-profile-fix">
-.scw-f45-shared-profile{grid-template-columns:minmax(0,1fr) minmax(280px,1.15fr)!important;align-items:center!important;gap:28px!important;width:100%!important;margin:26px 0 38px!important}
-.scw-f45-shared-profile .f45-profile-copy{position:relative!important;z-index:2!important}
-.scw-f45-shared-profile .f45-car-photo{display:flex!important;align-items:center!important;justify-content:flex-end!important;min-width:0!important;overflow:visible!important}
-.scw-f45-shared-profile .f45-car-photo img{display:block!important;width:100%!important;max-width:560px!important;height:auto!important;object-fit:contain!important;object-position:center!important}
+/* F45/F46 hero: same layout as vehicle.html */
+.scw-f45-shared-profile{display:grid;grid-template-columns:1fr 1.15fr;align-items:center;gap:42px;margin:54px 0 58px}
+.scw-f45-shared-profile .f45-profile-copy span{display:block;letter-spacing:.42em;margin-bottom:22px}
+.scw-f45-shared-profile .f45-profile-copy strong{display:block;font-size:clamp(42px,5.2vw,72px);line-height:1.05}
+.scw-f45-shared-profile .f45-profile-copy strong b{display:block;font-weight:400;color:#a7aaad;margin-top:8px}
+.scw-f45-shared-profile .f45-profile-copy small{display:block;font-size:24px;letter-spacing:.08em;color:#a7aaad;margin-top:24px}
+.scw-f45-shared-profile .f45-profile-copy p{font-size:20px;line-height:1.35;color:#9da1a5;margin-top:24px}
+.scw-f45-shared-profile .f45-car-photo{display:flex;align-items:center;justify-content:center;min-width:0}
+.scw-f45-shared-profile .f45-car-photo img{display:block;width:100%;height:auto;object-fit:contain}
 @media(max-width:700px){
-.scw-f45-shared-profile{grid-template-columns:44% 56%!important;gap:0!important;align-items:center!important;margin:22px 0 34px!important;min-height:260px!important}
-.scw-f45-shared-profile .f45-profile-copy{padding-right:4px!important}
-.scw-f45-shared-profile .f45-car-photo{height:250px!important;justify-content:center!important;overflow:visible!important}
-.scw-f45-shared-profile .f45-car-photo img{width:155%!important;max-width:none!important;transform:translateX(7%)!important}
+.scw-f45-shared-profile{grid-template-columns:1fr 1.15fr;gap:18px;margin:48px 0 58px;align-items:center}
+.scw-f45-shared-profile .f45-profile-copy span{font-size:14px;margin-bottom:18px}
+.scw-f45-shared-profile .f45-profile-copy strong{font-size:34px}
+.scw-f45-shared-profile .f45-profile-copy strong b{font-size:32px}
+.scw-f45-shared-profile .f45-profile-copy small{font-size:17px;margin-top:20px}
+.scw-f45-shared-profile .f45-profile-copy p{font-size:15px;margin-top:20px}
+.scw-f45-shared-profile .f45-car-photo img{width:100%;max-width:none;transform:none}
 }
 </style></head>
 <body>
