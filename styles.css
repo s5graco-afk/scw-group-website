@@ -914,3 +914,21 @@ main{
  .f30-car-photo{width:100%;height:180px;overflow:visible}
  .f30-car-photo img{width:100%;height:170px;max-width:none;object-fit:contain;object-position:center;transform:scale(1.05)}
 }
+
+/* F30/F31/F34: use the exact F45/F46 profile geometry */
+#f30-profile.f45-profile{display:none}
+#f30-profile .f45-car-photo{overflow:visible!important}
+#f30-profile .f45-car-photo img{
+  width:100%!important;height:100%!important;
+  object-fit:contain!important;object-position:center!important;
+  clip-path:none!important;transform:scale(1.06)!important;
+}
+@media(max-width:900px){
+ #f30-profile.f45-profile{grid-template-columns:46% 54%!important;width:100%!important;max-width:none!important;min-height:190px!important;gap:0!important;margin:28px 0 32px!important;align-items:center!important}
+ #f30-profile .f45-car-photo{width:100%!important;height:180px!important;overflow:visible!important}
+ #f30-profile .f45-car-photo img{
+   width:100%!important;height:170px!important;max-width:none!important;
+   object-fit:contain!important;object-position:center!important;
+   clip-path:none!important;transform:scale(1.05)!important;
+ }
+}
