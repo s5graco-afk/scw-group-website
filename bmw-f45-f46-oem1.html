@@ -5,7 +5,18 @@
 <title>BMW 2 Series F45 / F46 — Multimedia — SCW</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css?v=20260927-2230">
-</head>
+<style id="scw-f45-profile-fix">
+.scw-f45-shared-profile{grid-template-columns:minmax(0,1fr) minmax(280px,1.15fr)!important;align-items:center!important;gap:28px!important;width:100%!important;margin:26px 0 38px!important}
+.scw-f45-shared-profile .f45-profile-copy{position:relative!important;z-index:2!important}
+.scw-f45-shared-profile .f45-car-photo{display:flex!important;align-items:center!important;justify-content:flex-end!important;min-width:0!important;overflow:visible!important}
+.scw-f45-shared-profile .f45-car-photo img{display:block!important;width:100%!important;max-width:560px!important;height:auto!important;object-fit:contain!important;object-position:center!important}
+@media(max-width:700px){
+.scw-f45-shared-profile{grid-template-columns:44% 56%!important;gap:0!important;align-items:center!important;margin:22px 0 34px!important;min-height:260px!important}
+.scw-f45-shared-profile .f45-profile-copy{padding-right:4px!important}
+.scw-f45-shared-profile .f45-car-photo{height:250px!important;justify-content:center!important;overflow:visible!important}
+.scw-f45-shared-profile .f45-car-photo img{width:155%!important;max-width:none!important;transform:translateX(7%)!important}
+}
+</style></head>
 <body>
 <header class="topbar">
 <a class="logo" href="index.html"><img class="scw-logo-img" src="scw-logo-final.svg?v=20260927-1215" alt="SCW"><small>SMIRNOV CUSTOM WORKS</small></a>
