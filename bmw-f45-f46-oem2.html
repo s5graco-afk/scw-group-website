@@ -22,7 +22,7 @@
 <a class="quote" href="index.html#contact">GET A QUOTE →</a>
 </header>
 <main class="catalog">
-<a class="back" id="back-link" href="solution.html">← CAR MULTIMEDIA</a>
+<a class="back" id="back-link" href="solution.html">← CAR MULTIMEDIA</a><div class="f45-profile scw-f45-shared-profile" style="display:none"><div class="f45-profile-copy"><span>BMW</span><strong>2 Series <b>(F45 / F46)</b></strong><small>2014 – 2021</small><p>Active Tourer / Gran Tourer<br>Compact premium MPV</p></div><div class="f45-car-photo"><img src="assets/A8BB3108-5CD6-4B98-8E99-F162804733B7.png?v=1" alt="BMW 2 Series Active Tourer F45 F46"></div></div>
 <h1 id="car">Multimedia</h1>
 <div class="blue-line"></div>
 <section class="oem-detail-card">
@@ -71,4 +71,4 @@ document.getElementById("back-link").href="solution.html?brand="+encodeURICompon
 <script>
 (()=>{const g=document.getElementById("oem-gallery"),t=document.getElementById("gallery-track"),d=[...document.querySelectorAll(".gallery-dot")];if(!g||!t)return;let i=0,start=0;const show=n=>{i=(n+d.length)%d.length;t.style.transform="translateX("+(-i*100)+"%)";d.forEach((x,j)=>x.classList.toggle("active",j===i));};g.querySelector(".gallery-prev").onclick=()=>show(i-1);g.querySelector(".gallery-next").onclick=()=>show(i+1);d.forEach((x,j)=>x.onclick=()=>show(j));g.addEventListener("touchstart",e=>start=e.touches[0].clientX,{passive:true});g.addEventListener("touchend",e=>{let dx=e.changedTouches[0].clientX-start;if(Math.abs(dx)>45)show(i+(dx<0?1:-1));},{passive:true});})();
 </script>
-</body></html>
+<script>(function(){const p=document.querySelector(".scw-f45-shared-profile");if(p)p.style.setProperty("display","grid","important");const h=document.getElementById("car");if(h)h.style.display="none";})();</script></body></html>
