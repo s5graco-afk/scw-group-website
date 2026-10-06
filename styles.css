@@ -896,19 +896,3 @@ main{
 
 
 
-/* F30 image only — keep F45/F46 page geometry unchanged */
-#f30-profile .f45-car-photo img{
-  object-fit:contain!important;
-  clip-path:none!important;
-  transform:scale(.82)!important;
-}
-@media(max-width:900px){
- #f30-profile .f45-car-photo img{
-   width:100%!important;
-   height:170px!important;
-   object-fit:contain!important;
-   object-position:center!important;
-   clip-path:none!important;
-   transform:scale(.82)!important;
- }
-}
