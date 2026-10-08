@@ -6,15 +6,34 @@
 <meta name="description" content="SCW Custom Automotive Solutions — coding, retrofits, tuning and diagnostics in Cyprus.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v=20260929-2215">
 <style id="scw-home-global-bg">
-body{background:#07090b url("assets/0B0CD2FC-9A7D-4723-A297-1A1FD4C7733F.png?v=1") center top/cover fixed no-repeat!important}
-.hero{background:rgba(8,10,11,.42)!important}
-.servicebar{background:rgba(11,14,16,.78)!important;backdrop-filter:blur(2px)}
-.brands{background:rgba(12,16,18,.74)!important;backdrop-filter:blur(2px)}
-.about{background:rgba(10,13,15,.58)!important;max-width:none!important}
-.site-footer{background:rgba(10,13,15,.86)!important;backdrop-filter:blur(2px)}
+:root{--scw-bg:url("assets/0B0CD2FC-9A7D-4723-A297-1A1FD4C7733F.png?v=2")}
+body{background:#07090b var(--scw-bg) center top/cover fixed no-repeat!important}
+main{background:transparent!important}
+.hero{
+  background-image:linear-gradient(90deg,rgba(5,7,8,.84) 0%,rgba(5,7,8,.54) 38%,rgba(5,7,8,.20) 100%),var(--scw-bg)!important;
+  background-size:cover!important;background-position:center center!important;
+}
+.hero:before{opacity:.28!important}
+.shade{background:linear-gradient(90deg,rgba(5,7,8,.78) 0%,rgba(5,7,8,.42) 42%,rgba(5,7,8,.10) 100%)!important}
+.servicebar{
+  background-image:linear-gradient(rgba(9,12,14,.78),rgba(9,12,14,.78)),var(--scw-bg)!important;
+  background-size:cover!important;background-position:center 48%!important;
+}
+.brands{
+  background-image:linear-gradient(rgba(10,14,16,.72),rgba(10,14,16,.76)),var(--scw-bg)!important;
+  background-size:cover!important;background-position:center 56%!important;
+}
+.about{
+  background-image:linear-gradient(rgba(7,10,12,.66),rgba(7,10,12,.72)),var(--scw-bg)!important;
+  background-size:cover!important;background-position:center 70%!important;max-width:none!important;
+}
+.site-footer{
+  background-image:linear-gradient(rgba(7,10,12,.86),rgba(7,10,12,.90)),var(--scw-bg)!important;
+  background-size:cover!important;background-position:center bottom!important;
+}
 @media(max-width:900px){
-  body{background-attachment:scroll!important;background-position:center top!important}
-  .hero{background:rgba(8,10,11,.52)!important}
+  body{background-attachment:scroll!important}
+  .hero,.servicebar,.brands,.about,.site-footer{background-position:center center!important}
 }
 </style></head>
 <body>
