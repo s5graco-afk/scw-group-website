@@ -9,6 +9,11 @@
 .scw-e90-shared-profile.e90-profile{grid-template-columns:minmax(0,1fr) 300px;align-items:center;gap:38px;max-width:760px;margin:32px 0 28px}
 .scw-e90-shared-profile .e90-profile-copy span{display:block;color:#8e959a;font-size:12px;letter-spacing:3px;margin-bottom:8px}.scw-e90-shared-profile .e90-profile-copy strong{display:block;font-size:42px;line-height:1.02;letter-spacing:-1px}.scw-e90-shared-profile .e90-profile-copy strong b{font-weight:500;color:#aeb4b8}.scw-e90-shared-profile .e90-profile-copy small{display:block;margin-top:10px;color:#a8adb1;font-size:13px;letter-spacing:.08em}.scw-e90-shared-profile .e90-profile-copy p{margin:12px 0 0;color:#8e959a;font-size:13px;line-height:1.5}.scw-e90-shared-profile .e90-car-photo{height:170px;display:flex;align-items:center;justify-content:center;position:relative;background:radial-gradient(ellipse at 52% 62%,rgba(240,24,39,.10),transparent 62%)}.scw-e90-shared-profile .e90-car-photo img{position:relative;z-index:1;width:100%;height:100%;object-fit:contain}
 @media(max-width:900px){.scw-e90-shared-profile.e90-profile{grid-template-columns:46% 54%!important;width:100%!important;max-width:none!important;min-height:190px!important;gap:0!important;margin:28px 0 32px!important;align-items:center!important}.scw-e90-shared-profile .e90-profile-copy{padding-right:4px;z-index:2}.scw-e90-shared-profile .e90-profile-copy span{font-size:11px;letter-spacing:4px;margin-bottom:10px}.scw-e90-shared-profile .e90-profile-copy strong{font-size:29px;line-height:1.05;letter-spacing:-.7px}.scw-e90-shared-profile .e90-profile-copy strong b{display:block;margin-top:3px}.scw-e90-shared-profile .e90-profile-copy small{font-size:12px;margin-top:11px}.scw-e90-shared-profile .e90-profile-copy p{font-size:10.5px;line-height:1.4;margin-top:12px}.scw-e90-shared-profile .e90-car-photo{width:100%;height:180px}.scw-e90-shared-profile .e90-car-photo img{width:100%;height:170px;object-fit:contain}}
+</style><style id="w204-equipment-style">
+.w204-equipment-card .w204-equipment-photo{background:#fff;padding:26px 24px 22px;display:flex;align-items:center;justify-content:center}
+.w204-equipment-card .w204-equipment-photo img{display:block;width:78%;max-width:520px;height:auto!important;object-fit:contain!important;padding:0!important;background:transparent!important}
+.w204-equipment-card>.oem-detail-caption::before{content:"ADDITIONAL EQUIPMENT"!important}
+@media(max-width:700px){.w204-equipment-card .w204-equipment-photo{padding:22px 18px 18px}.w204-equipment-card .w204-equipment-photo img{width:84%}}
 </style></head>
 <body>
 <header class="topbar">
@@ -38,5 +43,11 @@ let back=document.getElementById("back-link");
 back.href="solution.html?brand="+encodeURIComponent(b)+"&model="+encodeURIComponent(m);
 </script>
 <script>(function(){const q=new URLSearchParams(location.search),brand=q.get("brand")||"",model=q.get("model")||"";if(brand==="BMW"&&model==="3 Series (E90 / E91 / E92 / E93)"){const profile=document.querySelector(".scw-e90-shared-profile");if(profile)profile.style.setProperty("display","grid","important");const h=document.getElementById("car");if(h)h.style.display="none";const img=document.querySelector(".oem-detail-card img");if(img){img.src="assets/04114E9D-B8B6-4FE5-9A9E-40AB39A91B7F.png?v=1";img.alt="BMW 3 Series E90 E91 E92 E93 multimedia solution 3";}}})();</script>
-<script src="vehicle-profile-shared.js?v=20261009-w204-profile"></script></body>
+<script src="vehicle-profile-shared.js?v=20261009-w204-profile"></script><script>
+(()=>{const q=new URLSearchParams(location.search);if(q.get("brand")!=="Mercedes-Benz"||q.get("model")!=="C Class (W204)")return;
+const card=document.querySelector(".oem-additional-section .oem-detail-card");if(!card)return;
+card.classList.add("w204-equipment-card");
+card.innerHTML='<div class="w204-equipment-photo"><img src="assets/0C500233-964F-423B-BFCD-0394D6AFBB58.png?v=1" alt="OEM-style rear view camera for Mercedes-Benz W204" loading="lazy"></div><div class="oem-detail-caption">OEM-Style Rear View Camera</div>';
+})();
+</script></body>
 </html>
