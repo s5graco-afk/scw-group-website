@@ -886,7 +886,7 @@ main{
 html{background:#090c0f}
 body{
   background-color:#090c0f!important;
-  background-image:linear-gradient(rgba(6,9,12,.70),rgba(6,9,12,.70)),url("assets/0B0CD2FC-9A7D-4723-A297-1A1FD4C7733F.png?v=3")!important;
+  background-image:linear-gradient(rgba(6,9,12,.32),rgba(6,9,12,.46)),url("assets/0B0CD2FC-9A7D-4723-A297-1A1FD4C7733F.png?v=3")!important;
   background-position:center center!important;
   background-repeat:no-repeat!important;
   background-size:cover!important;
@@ -894,7 +894,7 @@ body{
 }
 main,.catalog{background:transparent!important}
 .hero,.servicebar,.brands,.about,.contact,.site-footer{
-  background:rgba(8,11,14,.14)!important;
+  background:rgba(8,11,14,.08)!important;
   background-image:none!important;
   backdrop-filter:none!important;
   -webkit-backdrop-filter:none!important;
