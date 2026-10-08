@@ -880,3 +880,29 @@ main{
 
 
 
+
+
+/* SCW shared sitewide background: one uninterrupted image behind all pages */
+html{background:#090c0f}
+body{
+  background-color:#090c0f!important;
+  background-image:linear-gradient(rgba(6,9,12,.70),rgba(6,9,12,.70)),url("assets/0B0CD2FC-9A7D-4723-A297-1A1FD4C7733F.png?v=3")!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+  background-size:cover!important;
+  background-attachment:fixed!important;
+}
+main,.catalog{background:transparent!important}
+.hero,.servicebar,.brands,.about,.contact,.site-footer{
+  background:rgba(8,11,14,.14)!important;
+  background-image:none!important;
+  backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;
+}
+.hero:before{background:none!important}
+.shade{background:linear-gradient(90deg,rgba(6,9,12,.48),rgba(6,9,12,.07))!important}
+.servicebar,.brands,.contact,.site-footer{border-color:rgba(180,187,194,.12)!important}
+@media(max-width:900px){
+ body{background-attachment:fixed!important;background-position:center center!important}
+ .shade{background:linear-gradient(180deg,rgba(6,9,12,.30),rgba(6,9,12,.08))!important}
+}
