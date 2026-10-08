@@ -19,6 +19,12 @@
 .a4-premium-card>.oem-detail-caption::before{content:"MULTIMEDIA UPGRADE";display:block;margin-bottom:10px;color:#f01827;font-size:10px;font-weight:800;letter-spacing:2px}
 .a4-premium-card.a4-equipment-card>img{width:100%;height:auto!important}
 @media(max-width:700px){.a4-premium-card{border-radius:8px}.a4-premium-card>.oem-detail-caption{padding:17px 18px 21px!important}}
+
+/* Rear camera product card: white studio area and dark caption. */
+.a4-equipment-card .a4-equipment-photo-wrap{background:#fff;padding:26px 24px 22px;display:flex;align-items:center;justify-content:center}
+.a4-equipment-card .a4-equipment-photo-wrap img{display:block;width:78%;max-width:520px;height:auto!important;object-fit:contain!important;background:transparent!important;margin:0 auto}
+.a4-equipment-card>.oem-detail-caption::before{content:"ADDITIONAL EQUIPMENT"}
+@media(max-width:700px){.a4-equipment-card .a4-equipment-photo-wrap{padding:22px 18px 18px}.a4-equipment-card .a4-equipment-photo-wrap img{width:84%}}
 </style>
 </head>
 <body>
@@ -36,7 +42,7 @@
 
       <section class="oem-additional-section">
         <h2 class="oem-additional-title">Additional Equipment</h2>
-        <div class="oem-detail-card a4-premium-card a4-equipment-card"><img src="assets/C4C481E6-8983-4E45-84F1-C255F04C32C2.png?v=1" alt="Additional equipment rear camera for Audi A4 B8" loading="lazy"></div>
+        <div class="oem-detail-card a4-premium-card a4-equipment-card"><div class="a4-equipment-photo-wrap"><img src="assets/C4C481E6-8983-4E45-84F1-C255F04C32C2.png?v=1" alt="OEM-style rear view camera for Audi A4 B8" loading="lazy"></div><div class="oem-detail-caption">OEM-Style Rear View Camera</div></div>
       </section>
 </main>
 
