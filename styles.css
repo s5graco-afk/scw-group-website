@@ -1013,3 +1013,9 @@ main,.catalog{background:transparent!important}
   .solutions article,.fuel-card{border-radius:8px!important}
   .oem-detail-card .option-item summary{font-size:15px!important;line-height:1.35!important}
 }
+
+/* Remove artificial white gutters on full-size multimedia photos. */
+.oem-detail-card > img{padding:0!important}
+@media(max-width:700px){.oem-detail-card > img{padding:0!important}}
+/* Small equipment product shots keep their deliberate white studio area. */
+.a4-equipment-card .a4-equipment-photo-wrap img{padding:0!important}
