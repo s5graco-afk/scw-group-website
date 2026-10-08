@@ -906,3 +906,63 @@ main,.catalog{background:transparent!important}
  body{background-attachment:fixed!important;background-position:center center!important}
  .shade{background:linear-gradient(180deg,rgba(6,9,12,.30),rgba(6,9,12,.08))!important}
 }
+
+
+/* SCW Premium Dark — shared multimedia / equipment detail cards.
+   Keeps galleries, accordion content and links functional. */
+.oem-detail-card{
+  position:relative;
+  overflow:hidden;
+  padding:0!important;
+  border:1px solid rgba(210,220,230,.17)!important;
+  border-radius:10px;
+  background:rgba(11,15,19,.76)!important;
+  box-shadow:0 15px 42px rgba(0,0,0,.22);
+}
+.oem-detail-card::before{
+  content:"";
+  position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,#f01827,rgba(240,24,39,0) 55%);
+  z-index:3;pointer-events:none;
+}
+/* White studio panel for single photographs / product images. */
+.oem-detail-card > img{
+  box-sizing:border-box;
+  display:block;width:100%;height:auto!important;
+  aspect-ratio:auto!important;object-fit:contain!important;
+  background:#fff!important;
+  padding:clamp(14px,3vw,28px);
+}
+/* Existing gallery navigation and its photographs remain intact. */
+.oem-detail-card .oem-gallery{background:#fff}
+.oem-detail-card .oem-gallery-slide{background:#fff}
+.oem-detail-card .oem-gallery-slide img{
+  display:block;box-sizing:border-box;
+  width:100%;height:auto!important;
+  object-fit:contain!important;
+  background:#fff!important;
+  padding:clamp(12px,2.5vw,24px);
+}
+.oem-detail-card > .oem-detail-caption{
+  position:relative;
+  background:linear-gradient(180deg,rgba(22,28,34,.96),rgba(12,16,20,.99));
+  padding:20px 22px 23px!important;
+  color:#f2f3f4;
+  font-size:clamp(17px,2.7vw,22px)!important;
+  line-height:1.4!important;
+  font-weight:600;
+  letter-spacing:-.02em;
+}
+/* No generic heading over accordion menus; keep their current structure. */
+.oem-detail-card > .oem-detail-caption:not(.option-list)::before{
+  content:"MULTIMEDIA UPGRADE";display:block;margin-bottom:10px;
+  color:#f01827;font-size:10px;font-weight:800;letter-spacing:2px;
+}
+.oem-detail-card > .oem-detail-caption.option-list{
+  font-size:inherit!important;font-weight:normal;
+  letter-spacing:normal;
+}
+@media(max-width:700px){
+ .oem-detail-card{border-radius:8px}
+ .oem-detail-card > .oem-detail-caption{padding:17px 18px 21px!important}
+}
