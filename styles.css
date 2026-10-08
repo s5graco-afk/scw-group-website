@@ -991,3 +991,25 @@ main,.catalog{background:transparent!important}
  }
  .oem-detail-card .option-item summary:after{font-size:20px!important}
 }
+
+/* SCW unified premium styling for service/product surfaces.
+   Model and brand selectors intentionally retain their navigation layout. */
+:root{--scw-card-bg:rgba(11,15,19,.76);--scw-card-border:rgba(210,220,230,.17);--scw-card-radius:10px;--scw-accent:#f01827}
+.solutions article,
+.fuel-card{
+  border:1px solid var(--scw-card-border)!important;
+  border-radius:var(--scw-card-radius)!important;
+  background:var(--scw-card-bg)!important;
+  box-shadow:0 15px 42px rgba(0,0,0,.18);
+  overflow:hidden;
+}
+.solutions article{position:relative;padding:0!important}
+.solutions article::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--scw-accent),transparent 55%);z-index:2;pointer-events:none}
+.solutions article .multimedia-photo{border:0!important;min-height:0!important}
+.solutions article .multimedia-photo img{width:100%;object-fit:contain}
+.fuel-card{transition:transform .2s,border-color .2s}
+.fuel-card:hover{border-color:var(--scw-accent)!important}
+@media(max-width:700px){
+  .solutions article,.fuel-card{border-radius:8px!important}
+  .oem-detail-card .option-item summary{font-size:15px!important;line-height:1.35!important}
+}
