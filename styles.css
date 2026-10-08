@@ -931,7 +931,7 @@ main,.catalog{background:transparent!important}
   display:block;width:100%;height:auto!important;
   aspect-ratio:auto!important;object-fit:contain!important;
   background:#fff!important;
-  padding:clamp(14px,3vw,28px);
+  padding:8px 12px 0;
 }
 /* Existing gallery navigation and its photographs remain intact. */
 .oem-detail-card .oem-gallery{background:#fff}
@@ -941,7 +941,7 @@ main,.catalog{background:transparent!important}
   width:100%;height:auto!important;
   object-fit:contain!important;
   background:#fff!important;
-  padding:clamp(12px,2.5vw,24px);
+  padding:8px 12px 0;
 }
 .oem-detail-card > .oem-detail-caption{
   position:relative;
@@ -964,5 +964,16 @@ main,.catalog{background:transparent!important}
 }
 @media(max-width:700px){
  .oem-detail-card{border-radius:8px}
- .oem-detail-card > .oem-detail-caption{padding:17px 18px 21px!important}
+ .oem-detail-card > img,
+ .oem-detail-card .oem-gallery-slide img{padding:4px 8px 0!important}
+ .oem-detail-card > .oem-detail-caption:not(.option-list){
+   padding:15px 18px 19px!important;
+   font-size:15px!important;
+   line-height:1.35!important;
+ }
+ .oem-detail-card > .oem-detail-caption:not(.option-list)::before{
+   font-size:9px!important;
+   letter-spacing:1.6px!important;
+   margin-bottom:8px!important;
+ }
 }
