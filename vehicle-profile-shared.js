@@ -31,6 +31,6 @@ if(!document.getElementById("scw-unified-profile-style")){
 }
 const root=document.createElement("div");root.className="scw-unified-profile";
 const copy=document.createElement("div");copy.className="scw-unified-profile-copy";copy.innerHTML="<span>"+data[0].toUpperCase()+"</span><strong>"+data[1]+"</strong><small>"+data[2]+"</small><p>"+data[3]+"</p>";
-const photo=document.createElement("div");photo.className="scw-unified-car-photo";const img=document.createElement("img");img.src=data[4];img.alt=brand+" "+model;photo.append(img);root.append(copy,photo);
+const photo=document.createElement("div");photo.className="scw-unified-car-photo";const img=document.createElement("img");img.src=data[4];img.alt=brand+" "+model;img.onerror=()=>{if(model==="1 Series (E81)"){img.remove();const label=document.createElement("span");label.textContent="BMW E81";label.style.cssText="font-size:22px;color:#858d93;font-weight:700;letter-spacing:.15em";photo.append(label);}};photo.append(img);root.append(copy,photo);
 heading.before(root);heading.style.display="none";
 })();
