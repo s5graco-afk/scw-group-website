@@ -37,6 +37,15 @@
 .f20-oem-upgrade-caption p{margin:7px 0 0;color:#aeb4b8;font-size:13px;line-height:1.5}
 .f20-oem-upgrades .f20-oem-upgrade-card:nth-child(2) figure{overflow:hidden;background:#fff}.f20-oem-upgrades .f20-oem-upgrade-card:nth-child(2) img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center center!important;display:block!important}
 @media(max-width:700px){.f20-oem-upgrades{grid-template-columns:1fr;gap:18px}}
+</style><style id="f20-additional-equipment-cards">
+.f20-equipment-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:16px 0 38px;align-items:start}
+.f20-equipment-card{min-width:0;overflow:hidden;border:1px solid #30363a;border-radius:12px;background:#101417}
+.f20-equipment-card figure{margin:0;display:flex;align-items:center;justify-content:center;aspect-ratio:16/10;background:#fff;overflow:hidden;padding:18px;box-sizing:border-box}
+.f20-equipment-card figure img{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
+.f20-equipment-caption{padding:16px 18px 20px;background:#101417;border-top:1px solid #252a2e}
+.f20-equipment-caption h3{margin:0 0 8px;color:#fff;font-size:17px;line-height:1.4}
+.f20-equipment-caption p{margin:0;color:#aeb4b8;font-size:13px;line-height:1.55}
+@media(max-width:700px){.f20-equipment-grid{grid-template-columns:1fr;gap:18px}}
 </style></head>
 <body>
 <header class="topbar">
@@ -52,9 +61,15 @@
 </section>
 <section class="oem-additional-section">
 <h2 class="oem-additional-title">Additional Equipment</h2>
-<div class="oem-detail-card">
-<div class="placeholder">Rear-view camera</div>
-<div class="oem-detail-caption">A rear-view camera is the perfect addition when upgrading your vehicle. It is installed either in the factory-designated location or integrated so seamlessly that it looks as if it came fitted from the factory.</div>
+<div class="f20-equipment-grid">
+<article class="f20-equipment-card">
+<figure><img src="assets/89D973A7-B643-43B0-9D91-4EB73B839BCD.png?v=1" alt="Rear-view camera for BMW 1 Series F20 F21" loading="lazy"></figure>
+<div class="f20-equipment-caption"><h3>Rear-view camera</h3><p>A rear-view camera is the perfect addition when upgrading your vehicle. It is installed either in the factory-designated location or integrated so seamlessly that it looks as if it came fitted from the factory.</p></div>
+</article>
+<article class="f20-equipment-card" id="front-view-camera">
+<figure><img src="assets/7C27079D-20A8-459B-ABAB-7508E9994023.png?v=1" alt="Front-view parking camera for BMW 1 Series F20 F21" loading="lazy"></figure>
+<div class="f20-equipment-caption"><h3>Front-view camera</h3><p>A front-view camera helps you spot low obstacles and judge the distance to kerbs, making parking and manoeuvring in tight spaces easier.</p></div>
+</article>
 </div>
 </section>
 </main>
