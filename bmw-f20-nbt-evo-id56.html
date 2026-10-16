@@ -46,7 +46,17 @@
 .f20-equipment-caption h3{margin:0 0 8px;color:#fff;font-size:17px;line-height:1.4}
 .f20-equipment-caption p{margin:0;color:#aeb4b8;font-size:13px;line-height:1.55}
 @media(max-width:700px){.f20-equipment-grid{grid-template-columns:1fr;gap:18px}}
-</style></head>
+</style><style>
+.oem-gallery{position:relative;overflow:hidden;background:#0f1316;touch-action:pan-y}
+.oem-gallery-track{display:flex;transition:transform .35s ease}
+.oem-gallery-slide{min-width:100%;display:flex;align-items:center;justify-content:center}
+.oem-gallery-slide img{width:100%;height:auto!important;display:block;object-fit:contain}
+.gallery-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.45);background:rgba(8,10,12,.7);color:#fff;font-size:30px;line-height:40px;cursor:pointer}.gallery-prev{left:14px}.gallery-next{right:14px}
+.gallery-dots{display:flex;justify-content:center;gap:9px;padding:14px 0 2px}.gallery-dot{width:9px;height:9px;border:0;border-radius:50%;background:#555;cursor:pointer;padding:0}.gallery-dot.active{background:#f01827}
+.option-list{padding:4px 0}.option-item{border-top:1px solid rgba(255,255,255,.12)}.option-item:last-child{border-bottom:1px solid rgba(255,255,255,.12)}.option-item summary{list-style:none;cursor:pointer;padding:18px 4px 18px 27px;position:relative;font-weight:700;letter-spacing:.01em}.option-item summary::-webkit-details-marker{display:none}.option-item summary:before{content:"";position:absolute;left:5px;top:50%;transform:translateY(-50%);width:9px;height:9px;border-radius:50%;background:#f01827}.option-item summary:after{content:"+";position:absolute;right:7px;font-size:22px;font-weight:400;top:50%;transform:translateY(-50%)}.option-item[open] summary:after{content:"−"}.option-description{padding:0 34px 18px 27px;color:#b9bec4;line-height:1.55}
+@media(max-width:700px){.gallery-arrow{width:38px;height:38px;font-size:25px}.gallery-prev{left:8px}.gallery-next{right:8px}}
+</style>
+</head>
 <body>
 <header class="topbar">
 <a class="logo" href="index.html"><img class="scw-logo-img" src="scw-logo-final.svg?v=20260927-1215" alt="SCW"><small>SMIRNOV CUSTOM WORKS</small></a>
@@ -55,9 +65,41 @@
 <main class="catalog">
 <a class="back" id="back-link" href="solution.html">← CAR MULTIMEDIA</a><h1 id="car">BMW iDrive NBT Evo ID5/6</h1>
 <div class="blue-line"></div>
-<section class="f20-oem-upgrades" aria-label="Multimedia screen upgrades">
-<article class="f20-oem-upgrade-card"><figure><img src="assets/8EDA10E5-8D90-444E-BA98-1033D0E47F54.png?v=fd6447b1409a" alt="BMW F20 F21 multimedia screen upgrade 1" loading="lazy"></figure><div class="f20-oem-upgrade-caption"><strong>BMW Multimedia Upgrade — Option 1</strong><p>Adding modern Apple CarPlay and Android Auto functionality to the existing screen without replacing it.</p></div></article>
-<article class="f20-oem-upgrade-card"><figure><img src="assets/CF931756-584F-46D3-84CB-D61C53D661DB.png?v=61fa6bb0caca" alt="BMW F20 F21 multimedia screen upgrade 2" loading="lazy"></figure><div class="f20-oem-upgrade-caption"><strong>BMW Multimedia Upgrade — Option 2</strong><p>Replacing the factory screen with a new one in a modern style.</p></div></article>
+<section class="oem-detail-card">
+<div class="oem-gallery" id="oem-gallery">
+<div class="oem-gallery-track" id="gallery-track">
+<div class="oem-gallery-slide"><img src="https://raw.githubusercontent.com/s5graco-afk/scw-group-website/bfeb293a5ef8cd01716fc9e6ae1f52022828dc5c/assets/B7549820-A4AC-4030-8BCE-7EB4A6CBB754.png" alt="BMW F20 F21 NBT Evo multimedia"></div>
+<div class="oem-gallery-slide"><img src="https://raw.githubusercontent.com/s5graco-afk/scw-group-website/bfeb293a5ef8cd01716fc9e6ae1f52022828dc5c/assets/05C731AC-0692-4F1F-AA7B-63D6D14AC7D4.png" alt="BMW F20 F21 NBT Evo multimedia"></div>
+<div class="oem-gallery-slide"><img src="https://raw.githubusercontent.com/s5graco-afk/scw-group-website/bfeb293a5ef8cd01716fc9e6ae1f52022828dc5c/assets/076BE195-9613-4B54-B28F-0EFF6107BF10.png" alt="BMW F20 F21 NBT Evo multimedia"></div>
+<div class="oem-gallery-slide"><img src="https://raw.githubusercontent.com/s5graco-afk/scw-group-website/bfeb293a5ef8cd01716fc9e6ae1f52022828dc5c/assets/1B3B17D3-DF13-46F5-A2EB-49036A49F840.png" alt="BMW F20 F21 NBT Evo multimedia"></div>
+</div>
+<button class="gallery-arrow gallery-prev" type="button" aria-label="Previous photo">‹</button>
+<button class="gallery-arrow gallery-next" type="button" aria-label="Next photo">›</button>
+</div>
+<div class="gallery-dots"><button class="gallery-dot active" aria-label="Photo 1"></button><button class="gallery-dot" aria-label="Photo 2"></button><button class="gallery-dot" aria-label="Photo 3"></button><button class="gallery-dot" aria-label="Photo 4"></button></div>
+<div class="oem-detail-caption option-list">
+<details class="option-item"><summary>Region Change</summary><div class="option-description">Change the multimedia system region from any region to any other region. Adds the appropriate language selection, regional radio frequencies and regional navigation maps.</div></details>
+<details class="option-item"><summary>Apple CarPlay Activation</summary><div class="option-description">Activation of the factory Apple CarPlay functionality in the original BMW multimedia system.</div></details>
+<details class="option-item"><summary>Regional Maps Installation</summary><div class="option-description">Installation of original navigation maps for the selected region.</div></details>
+<details class="option-item"><summary>Radio Frequency Change</summary><div class="option-description">Changes the radio frequency settings to match the frequencies used in the selected region.</div></details>
+<details class="option-item"><summary>Coding</summary><div class="option-description">
+<strong>Available multimedia &amp; iDrive coding:</strong><br>
+• BMW M startup animation<br>
+• Video in Motion<br>
+• Additional USB video codecs<br>
+• ID5 to ID6 interface<br>
+• Screen Mirroring<br>
+• DRL on/off option in iDrive<br>
+• Acoustic lock/unlock confirmation<br>
+• Rolls-Royce warning sounds<br>
+• BMW i warning sounds<br>
+• M-style sport displays<br>
+• Tyre temperature display<br>
+• Rear camera trailer-hitch zoom<br>
+• Full-screen Apple CarPlay
+</div></details>
+<details class="option-item"><summary>Android Auto Installation</summary><div class="option-description">From the factory, this multimedia system does not support connecting Android phones via Android Auto. We can add Android Auto functionality to your original multimedia system.</div></details>
+</div>
 </section>
 <section class="oem-additional-section">
 <h2 class="oem-additional-title">Additional Equipment</h2>
@@ -79,4 +121,7 @@ let p=new URLSearchParams(location.search),b=p.get("brand")||"BMW",m=p.get("mode
 car.textContent=(b+" "+m).trim()||"Multimedia";
 document.getElementById("back-link").href="solution.html?brand="+encodeURIComponent(b)+"&model="+encodeURIComponent(m);
 </script>
-<script src="vehicle-profile-shared.js?v=20261016-f20-all-pages"></script></body></html>
+<script src="vehicle-profile-shared.js?v=20261016-f20-all-pages"></script><script>
+(()=>{const g=document.getElementById("oem-gallery"),t=document.getElementById("gallery-track"),d=[...document.querySelectorAll(".gallery-dot")];if(!g||!t)return;let i=0,start=0;const show=n=>{i=(n+d.length)%d.length;t.style.transform="translateX("+(-i*100)+"%)";d.forEach((x,j)=>x.classList.toggle("active",j===i));};g.querySelector(".gallery-prev").onclick=()=>show(i-1);g.querySelector(".gallery-next").onclick=()=>show(i+1);d.forEach((x,j)=>x.onclick=()=>show(j));g.addEventListener("touchstart",e=>start=e.touches[0].clientX,{passive:true});g.addEventListener("touchend",e=>{let dx=e.changedTouches[0].clientX-start;if(Math.abs(dx)>45)show(i+(dx<0?1:-1));},{passive:true});})();
+</script>
+</body></html>
