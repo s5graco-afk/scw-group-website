@@ -209,5 +209,12 @@ body.f10-multimedia #multimedia-cards .multimedia-caption{display:block!importan
 body.f10-multimedia #multimedia-cards .multimedia-caption strong{display:block;font-size:15px}
 body.f10-multimedia #multimedia-cards .multimedia-caption-meta{display:flex;justify-content:space-between;gap:8px;margin-top:8px;color:#b8bec3;font-size:12px}
 body.f10-multimedia #multimedia-cards .multimedia-select{color:#ff4653;font-weight:700}
+/* Keep the lower black caption only as tall as its content, overriding global card minimum heights. */
+body.f10-multimedia #multimedia-cards{grid-auto-rows:min-content!important}
+body.f10-multimedia #multimedia-cards article,body.f10-multimedia #multimedia-cards article>a{height:fit-content!important;min-height:0!important;max-height:none!important;align-self:start!important}
+body.f10-multimedia #multimedia-cards .multimedia-card-link{height:auto!important;min-height:0!important;max-height:none!important}
+body.f10-multimedia #multimedia-cards .multimedia-caption{height:auto!important;min-height:0!important;max-height:none!important;padding:13px 18px 14px!important}
+body.f10-multimedia #multimedia-cards .multimedia-caption-meta{margin-top:6px!important}
+
 @media(max-width:650px){body.f10-multimedia #multimedia-cards{grid-template-columns:1fr!important;gap:18px!important}}
 </style><script id="scw-f10-multimedia-options">(()=>{const q=new URLSearchParams(location.search);if(q.get("brand")!=="BMW"||q.get("model")!=="5 Series (F10 / F11)")return;document.body.classList.add("f10-multimedia");const cards=document.getElementById("multimedia-cards");if(!cards)return;const qs="brand=BMW&model=5%20Series%20(F10%20%2F%20F11)";const rows=[["bmw-f10-nbt.html","BMW iDrive CIC","Original display","assets/D8C40CB6-EF08-4F46-A4D9-6EEB1718334D.png?v=20261017"],["bmw-f10-cic.html","BMW iDrive NBT","Original display","assets/95E29D58-F4A2-42CD-9887-E6C53C37668E.png?v=20261017"]];cards.innerHTML=rows.map(([href,title,subtitle,photo])=>'<article><a class="multimedia-card-link" href="'+href+'?'+qs+'"><div class="multimedia-photo"><img src="'+photo+'" alt="'+title+'" loading="lazy"></div><span class="multimedia-caption"><strong>'+title+'</strong><span class="multimedia-caption-meta"><span>'+subtitle+'</span><span class="multimedia-select">Select →</span></span></span></a></article>').join("");})();</script><script src="bmw-f10-header.js?v=20261017-f10"></script></body></html>
