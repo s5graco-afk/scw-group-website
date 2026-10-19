@@ -31,6 +31,6 @@ const main=document.querySelector("main");if(!main)return;
 const heading=main.querySelector("h1#car")||main.querySelector("h1");if(!heading)return;
 main.querySelectorAll(".scw-unified-profile,.scw-jimny-profile").forEach(el=>el.remove());
 const hero=document.createElement("div");hero.className="scw-jimny-hero";
-hero.innerHTML='<div class="scw-jimny-hero-copy"><span>Suzuki</span><strong>Jimny</strong><small>2018 – present</small><p>Compact 4×4 SUV<br>Off-road capability</p></div><div class="scw-jimny-hero-car"><img src="assets/C761BE8D-5695-427B-8C3A-AF8A61118AE8.png?v=2" alt="BMW 5 Series Jimny"></div>';
+hero.innerHTML='<div class="scw-jimny-hero-copy"><span>Suzuki</span><strong>Jimny</strong><small>2018 – present</small><p>Compact 4×4 SUV<br>Off-road capability</p></div><div class="scw-jimny-hero-car"><img src="assets/C761BE8D-5695-427B-8C3A-AF8A61118AE8.png?v=2" alt="Suzuki Jimny"></div>';
 heading.before(hero);heading.style.display="none";
 })();
