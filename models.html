@@ -50,20 +50,43 @@ const d={
     {name:"Countryman (U25)",years:"2024–present"}
   ],
   "Mercedes-Benz":[
+    {name:"A Class (W176)",years:"2012–2018"},
+    {name:"A Class (W177 / V177)",years:"2018–present"},
+    {name:"B Class (W246)",years:"2011–2018"},
+    {name:"B Class (W247)",years:"2018–present"},
+    {name:"CLA (C117 / X117)",years:"2013–2019"},
+    {name:"CLA (C118 / X118)",years:"2019–2025"},
+    {name:"CLA (C174)",years:"2025–present"},
     {name:"C Class (W204)",years:"2007–2014"},
     {name:"C Class (W205)",years:"2014–2021"},
+    {name:"C Class (W206 / S206)",years:"2021–present"},
     {name:"E Class (W212)",years:"2009–2016"},
     {name:"E Class (W213)",years:"2016–2023"},
+    {name:"E Class (W214 / S214)",years:"2023–present"},
     {name:"S Class (W222)",years:"2013–2020"},
+    {name:"S Class (W223 / V223)",years:"2020–present"},
+    {name:"CLE (C236 / A236)",years:"2023–present"},
     {name:"SLK (R172)",years:"2011–2016"},
+    {name:"SL (R232)",years:"2022–present"},
+    {name:"GLA (X156)",years:"2013–2020"},
+    {name:"GLA (H247)",years:"2020–present"},
+    {name:"GLB (X247)",years:"2019–present"},
     {name:"GLC (X253)",years:"2015–2022"},
     {name:"GLC (X254)",years:"2022–present"},
+    {name:"GLC Coupé (C254)",years:"2023–present"},
     {name:"GLE (W166)",years:"2015–2019"},
     {name:"GLE (V167)",years:"2019–present"},
     {name:"GLS (X166)",years:"2015–2019"},
-    {name:"GLS (X167)",years:"2019–present"}
-  ],
-  "Audi":[
+    {name:"GLS (X167)",years:"2019–present"},
+    {name:"G Class (W463A / W465)",years:"2018–present"},
+    {name:"EQA (H243)",years:"2021–present"},
+    {name:"EQB (X243)",years:"2021–present"},
+    {name:"EQC (N293)",years:"2019–2023"},
+    {name:"EQE (V295)",years:"2022–present"},
+    {name:"EQE SUV (X294)",years:"2023–present"},
+    {name:"EQS (V297)",years:"2021–present"},
+    {name:"EQS SUV (X296)",years:"2022–present"}
+  ],  "Audi":[
     {name:"A3 (8P)",years:"2003–2013"},{name:"A3 (8V)",years:"2012–2020"},{name:"A3 (8Y)",years:"2020–present"},
     {name:"A4 (B8 / 8K)",years:"2007–2015"},{name:"A4 (B9 / 8W)",years:"2015–2024"},
     {name:"A5 (8T / 8F)",years:"2007–2016"},{name:"A5 (F5)",years:"2016–2024"},
@@ -136,6 +159,6 @@ let p=new URLSearchParams(location.search),b=p.get("brand")||"BMW";
 brand.textContent=b;
 models.innerHTML=(d[b]||["Contact us for available models"]).map(item=>{
   const x=typeof item==="string"?{name:item,years:""}:item;
-  const enabled=(b==="BMW"&&(x.name==="1 Series (F20 / F21)"||x.name==="1 Series (E81 / E82 / E87 / E88)"||x.name==="2 Series (F22 / F23)"||x.name==="2 Series (F45 / F46)"||x.name==="2 Series (F44 Gran Coupé)"||x.name==="3 Series (E90 / E91 / E92 / E93)"||x.name==="3 Series (F30 / F31 / F34)"||x.name==="2 Series (U06 Active Tourer)"||x.name==="4 Series (F32 / F33 / F36)"||x.name==="5 Series (E60 / E61)"||x.name==="5 Series (F10 / F11)"||x.name==="X2 (F39)"||x.name==="X3 (G01)"||x.name==="X4 (G02)"))||(b==="Mercedes-Benz"&&(x.name==="C Class (W204)"||x.name==="C Class (W205)"||x.name==="SLK (R172)"))||(b==="Audi"&&(x.name==="A4 (B8 / 8K)"||x.name==="Q5 (8R)"))||(b==="Lexus"&&(x.name==="RX (AL20)"||x.name==="NX (AZ10)"))||(b==="Toyota"&&x.name==="RAV4 (XA50)")||(b==="Suzuki"&&x.name==="Jimny"); return enabled?`<a href="vehicle.html?brand=${encodeURIComponent(b)}&model=${encodeURIComponent(x.name)}"><strong>${x.name}</strong>${x.years?`<span class="model-year">${x.years}</span>`:""}</a>`:`<div class="model-disabled"><strong>${x.name}</strong>${x.years?`<span class="model-year">${x.years}</span>`:""}</div>`;
+  const enabled=(b==="BMW"&&(x.name==="1 Series (F20 / F21)"||x.name==="1 Series (E81 / E82 / E87 / E88)"||x.name==="2 Series (F22 / F23)"||x.name==="2 Series (F45 / F46)"||x.name==="2 Series (F44 Gran Coupé)"||x.name==="3 Series (E90 / E91 / E92 / E93)"||x.name==="3 Series (F30 / F31 / F34)"||x.name==="2 Series (U06 Active Tourer)"||x.name==="4 Series (F32 / F33 / F36)"||x.name==="5 Series (E60 / E61)"||x.name==="5 Series (F10 / F11)"||x.name==="X2 (F39)"||x.name==="X3 (G01)"||x.name==="X4 (G02)"))||(b==="Mercedes-Benz"&&(x.name==="C Class (W204)"||x.name==="C Class (W205)"||x.name==="SLK (R172)"||!["C Class (W204)","C Class (W205)","SLK (R172)","E Class (W212)","E Class (W213)","S Class (W222)","GLC (X253)","GLC (X254)","GLE (W166)","GLE (V167)","GLS (X166)","GLS (X167)"].includes(x.name)))||(b==="Audi"&&(x.name==="A4 (B8 / 8K)"||x.name==="Q5 (8R)"))||(b==="Lexus"&&(x.name==="RX (AL20)"||x.name==="NX (AZ10)"))||(b==="Toyota"&&x.name==="RAV4 (XA50)")||(b==="Suzuki"&&x.name==="Jimny"); return enabled?`<a href="vehicle.html?brand=${encodeURIComponent(b)}&model=${encodeURIComponent(x.name)}"><strong>${x.name}</strong>${x.years?`<span class="model-year">${x.years}</span>`:""}</a>`:`<div class="model-disabled"><strong>${x.name}</strong>${x.years?`<span class="model-year">${x.years}</span>`:""}</div>`;
 }).join("");
 </script><footer class="site-footer"><a class="logo" href="index.html"><img class="scw-logo-img" src="scw-logo-final.svg?v=20260927-1215" alt="SCW"><small>SMIRNOV CUSTOM WORKS</small></a><div class="footer-contact">info@scw-group.com · Cyprus</div><div class="footer-copy">© 2026 SCW Group</div><div class="footer-status"><strong>SCW ONLINE • AUTOMATIC DEPLOY ACTIVE</strong></div></footer></body></html>
