@@ -250,7 +250,7 @@ body.scw-w204-only #multimedia-cards .multimedia-select{color:#ff4653!important;
 @media(max-width:650px){body.scw-w204-only #multimedia-cards{grid-template-columns:minmax(0,1fr)!important;max-width:540px!important;margin-left:auto!important;margin-right:auto!important}}
 </style>
 <script id="scw-w204-unified-cards-script">(()=>{const q=new URLSearchParams(location.search);if(q.get("brand")!=="Mercedes-Benz"||q.get("model")!=="C Class (W204)")return;document.body.classList.add("scw-w204-only");const cards=document.querySelectorAll("#multimedia-cards article");const imgs=[
-["assets/A892C282-EB80-44D4-A91F-80330B8F5675.jpeg","assets/w204-oem-final.jpg?v=3","Mercedes-Benz Multimedia — Option 1"],
-["assets/D2D2B817-8F86-4BEE-99EA-99E0BACB4989.png","assets/IMG_2911.jpeg?v=1","Mercedes-Benz Multimedia — Option 2"],
-["assets/9FCDCFEA-9141-4F75-82FD-122777B2451A.jpeg","assets/IMG_2387.jpeg?v=1","Mercedes-Benz Multimedia — Option 3"]
+["assets/A892C282-EB80-44D4-A91F-80330B8F5675.jpeg","assets/w204-oem-final.jpg?v=3","Mercedes-Benz Multimedia NTG 4.0"],
+["assets/9FCDCFEA-9141-4F75-82FD-122777B2451A.jpeg","assets/IMG_2387.jpeg?v=1","Mercedes-Benz Multimedia NTG 4.5"],
+["assets/D2D2B817-8F86-4BEE-99EA-99E0BACB4989.png","assets/IMG_2911.jpeg?v=1","Mercedes-Benz Multimedia NTG 5.0"]
 ];cards.forEach((card,i)=>{if(i>=imgs.length)return;const a=card.querySelector("a"),photo=card.querySelector(".multimedia-photo"),img=card.querySelector("img");if(!a||!img)return;const [src,fallback,title]=imgs[i];img.onerror=function(){this.onerror=null;this.src=fallback};img.src=src;img.alt=title;if(photo)photo.classList.remove("placeholder");let caption=a.querySelector(".multimedia-caption");if(!caption){caption=document.createElement("span");caption.className="multimedia-caption";a.appendChild(caption)}caption.innerHTML='<strong>'+title+'</strong><span class="multimedia-caption-meta"><span>Multimedia upgrade</span><span class="multimedia-select">Select →</span></span>';});})();</script></body></html>
