@@ -27,6 +27,19 @@
 .w205-ntg6-copy small{font-size:12px;margin-top:11px}.w205-ntg6-copy p{font-size:10.5px;line-height:1.4;margin-top:12px}
 .w205-ntg6-car{height:180px}.w205-ntg6-car img{height:170px;transform:scale(1.05)}
 }
+
+/* W205 NTG6-only expandable service descriptions */
+.w205-ntg6-services{max-width:900px;margin:30px 0 48px}
+.w205-ntg6-services details{background:#101417;border:1px solid #30363a;border-radius:10px;margin:0 0 12px;overflow:hidden}
+.w205-ntg6-services summary{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:19px 22px;cursor:pointer;font-size:16px;font-weight:600;color:#f4f5f5;list-style:none}
+.w205-ntg6-services summary::-webkit-details-marker{display:none}
+.w205-ntg6-services summary:after{content:"+";color:#ee2536;font-size:25px;font-weight:400;line-height:1}
+.w205-ntg6-services details[open] summary:after{content:"−"}
+.w205-ntg6-services details[open] summary{border-bottom:1px solid #30363a}
+.w205-ntg6-services .service-body{padding:18px 22px 22px;color:#b7bec4;font-size:14px;line-height:1.7}
+.w205-ntg6-services .service-body p{margin:0 0 12px}.w205-ntg6-services .service-body p:last-child{margin-bottom:0}
+.w205-ntg6-services .service-body ul{margin:0;padding-left:20px}.w205-ntg6-services .service-body li+li{margin-top:10px}
+@media(max-width:650px){.w205-ntg6-services summary{padding:17px 16px}.w205-ntg6-services .service-body{padding:16px}}
 </style>
 </head>
 <body>
@@ -35,6 +48,13 @@
 <a class="back" href="solution.html?brand=Mercedes-Benz&amp;model=C%20Class%20%28W205%29">← CAR MULTIMEDIA</a>
 <div class="w205-ntg6-hero"><div class="w205-ntg6-copy"><span>Mercedes-Benz</span><strong>C Class <b>(W205)</b></strong><small>2014 – 2021</small><p>Premium compact executive car<br>Sedan / Estate</p></div><div class="w205-ntg6-car"><img src="assets/E4816D68-A4FD-41A5-AA38-B9D352706EB1.png?v=1" alt="Mercedes-Benz W205"></div></div><h1>Mercedes Benz multimedia NTG 6</h1><div class="blue-line"></div>
 <section class="oem-detail-card w205-ntg6-card"><figure class="ntg6-photo"><img src="assets/5BBD201D-2BB2-43CA-AF6A-885EB2199949.png?v=20261020" alt="Mercedes-Benz C Class W205 NTG 6 multimedia"></figure><div class="oem-detail-caption">Replacing the factory screen with a new one in a modern style.</div></section>
+<section class="w205-ntg6-services" aria-label="NTG 6 services">
+<details><summary>Region Change</summary><div class="service-body"><p>Change the system region from any region to any other region. This includes adding the appropriate language pack, adjusting radio frequencies, installing local navigation maps, and enabling clock adjustment and traffic sign recognition features.</p></div></details>
+<details><summary>Local Navigation Maps</summary><div class="service-body"><p>Installation of the latest available version of local navigation maps.</p></div></details>
+<details><summary>Radio Frequency Change</summary><div class="service-body"><p>Adjust the radio frequency range to match the requirements of the selected region.</p></div></details>
+<details><summary>Apple CarPlay</summary><div class="service-body"><p>Add Apple CarPlay functionality using one of two options:</p><ul><li><strong>Factory-style activation:</strong> The original factory CarPlay uses half of the screen and works only via a wired connection.</li><li><strong>Additional module:</strong> A separate module is installed behind the dashboard, enabling full-screen Apple CarPlay with wireless connectivity.</li></ul></div></details>
+<details><summary>Android Auto</summary><div class="service-body"><p>Add Android Auto functionality using one of two options:</p><ul><li><strong>Factory-style activation:</strong> The original factory Android Auto uses half of the screen and works only via a wired connection.</li><li><strong>Additional module:</strong> A separate module is installed behind the dashboard, enabling full-screen Android Auto with wireless connectivity.</li></ul></div></details>
+</section>
 </main>
 <footer class="site-footer"><a class="logo" href="index.html"><img class="scw-logo-img" src="scw-logo-final.svg?v=20260927-1215" alt="SCW"><small>SMIRNOV CUSTOM WORKS</small></a><div class="footer-contact">info@scw-group.com · Cyprus</div><div class="footer-copy">© 2026 SCW Group</div><div class="footer-status"><strong>SCW ONLINE • AUTOMATIC DEPLOY ACTIVE</strong></div></footer>
 </body></html>
