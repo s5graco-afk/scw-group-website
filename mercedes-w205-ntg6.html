@@ -4,21 +4,37 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Mercedes-Benz C Class W205 — NTG 6 — SCW</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<style>
-:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#080b0e;color:#f4f5f6;font-family:Arial,Helvetica,sans-serif;background-image:linear-gradient(150deg,#080b0e,#141b21 60%,#080b0e);background-size:cover;background-position:center;background-attachment:fixed}a{color:inherit;text-decoration:none}
-.topbar{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:34px max(5%,24px);background:#090d10;border-bottom:1px solid #20262b}.logo img{display:block;width:180px;max-width:45vw}.logo small{display:block;font-size:9px;letter-spacing:2.6px;color:#b5b9bc;margin-top:5px}.quote{background:#ed1728;padding:18px 24px;font-size:13px;font-weight:700;letter-spacing:1.4px;border-radius:4px;white-space:nowrap}
-.catalog{width:min(1120px,calc(100% - 48px));margin:48px auto 100px}.back{display:inline-block;color:#bbc0c4;font-size:13px;letter-spacing:1px;margin-bottom:44px}.back:hover{color:#fff}h1{font-size:clamp(29px,4vw,46px);margin:0 0 16px;line-height:1.2}.blue-line{height:3px;width:65px;background:#ee1829;margin-bottom:36px}
-.ntg6-card{max-width:900px;overflow:hidden;border:1px solid #30363a;border-radius:12px;background:#101417}.ntg6-photo{margin:0;background:#fff;display:flex;align-items:flex-end;justify-content:center;overflow:hidden}.ntg6-photo img{display:block;width:100%;height:auto;object-fit:contain;object-position:center bottom}.ntg6-caption{background:#101417;padding:18px 22px;color:#f5f5f5;font-size:16px;line-height:1.5}
-.site-footer{padding:48px max(5%,24px);background:#080b0d;border-top:1px solid #25292e;display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}.site-footer .logo img{width:180px}.footer-contact,.footer-copy{font-size:12px;color:#90999f}.footer-status{font-size:10px;letter-spacing:1px;color:#a7afb4}
-@media(max-width:650px){.topbar{padding:24px 5%}.logo img{width:140px}.quote{padding:16px 14px;font-size:11px}.catalog{width:calc(100% - 36px);margin:34px auto 70px}.back{margin-bottom:35px}.ntg6-caption{padding:16px 18px}.site-footer{padding:38px 6%}}
+<link rel="stylesheet" href="styles.css?v=20261009-no-gutters6">
+<style id="w205-ntg6-private">
+/* This page keeps its own W205 presentation rules. */
+.w205-ntg6-hero{display:grid;grid-template-columns:minmax(0,1fr) 300px;align-items:center;gap:38px;max-width:760px;margin:32px 0 28px}
+.w205-ntg6-copy span{display:block;color:#8e959a;font-size:12px;letter-spacing:3px;margin-bottom:8px}
+.w205-ntg6-copy strong{display:block;font-size:42px;line-height:1.02;letter-spacing:-1px}
+.w205-ntg6-copy strong b{font-weight:500;color:#aeb4b8}
+.w205-ntg6-copy small{display:block;margin-top:10px;color:#a8adb1;font-size:13px;letter-spacing:.08em}
+.w205-ntg6-copy p{margin:12px 0 0;color:#8e959a;font-size:13px;line-height:1.5}
+.w205-ntg6-car{height:170px;display:flex;align-items:center;justify-content:center;position:relative;background:radial-gradient(ellipse at 52% 62%,rgba(240,24,39,.10),transparent 62%)}
+.w205-ntg6-car:after{content:"";position:absolute;left:8%;right:8%;bottom:18px;height:18px;background:radial-gradient(ellipse,rgba(0,0,0,.8),transparent 68%);filter:blur(5px)}
+.w205-ntg6-car img{position:relative;z-index:1;width:100%;height:100%;object-fit:contain;transform:scale(1.06)}
+.w205-ntg6-card{max-width:900px}
+.w205-ntg6-card .ntg6-photo{margin:0;background:#fff;display:flex;align-items:flex-end;justify-content:center;overflow:hidden}
+.w205-ntg6-card .ntg6-photo img{display:block;width:100%;height:auto;object-fit:contain;object-position:center bottom}
+.w205-ntg6-card .oem-detail-caption{background:#101417;color:#f5f5f5}
+@media(max-width:900px){
+.w205-ntg6-hero{grid-template-columns:minmax(0,46%) minmax(0,54%);gap:0;width:100%;max-width:none;min-height:190px;margin:28px 0 32px}
+.w205-ntg6-copy{padding-right:4px;z-index:2}.w205-ntg6-copy span{font-size:11px;letter-spacing:4px;margin-bottom:10px}
+.w205-ntg6-copy strong{font-size:29px;line-height:1.05;letter-spacing:-.7px}.w205-ntg6-copy strong b{display:block;margin-top:3px}
+.w205-ntg6-copy small{font-size:12px;margin-top:11px}.w205-ntg6-copy p{font-size:10.5px;line-height:1.4;margin-top:12px}
+.w205-ntg6-car{height:180px}.w205-ntg6-car img{height:170px;transform:scale(1.05)}
+}
 </style>
 </head>
 <body>
-<header class="topbar"><a class="logo" href="index.html"><img src="scw-logo-final.svg?v=20260927-1215" alt="SCW"><small>SMIRNOV CUSTOM WORKS</small></a><a class="quote" href="index.html#contact">GET A QUOTE →</a></header>
+<header class="topbar"><a class="logo" href="index.html"><img class="scw-logo-img" src="scw-logo-final.svg?v=20260927-1215" alt="SCW"><small>SMIRNOV CUSTOM WORKS</small></a><a class="quote" href="https://wa.me/35795956503?text=Hi%21%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener">GET A QUOTE →</a></header>
 <main class="catalog">
 <a class="back" href="solution.html?brand=Mercedes-Benz&amp;model=C%20Class%20%28W205%29">← CAR MULTIMEDIA</a>
-<h1>Mercedes-Benz C Class (W205) — NTG 6</h1><div class="blue-line"></div>
-<section class="ntg6-card"><figure class="ntg6-photo"><img src="assets/5BBD201D-2BB2-43CA-AF6A-885EB2199949.png?v=20261020" alt="Mercedes-Benz C Class W205 NTG 6 multimedia"></figure><div class="ntg6-caption">Replacing the factory screen with a new one in a modern style.</div></section>
+<div class="w205-ntg6-hero"><div class="w205-ntg6-copy"><span>Mercedes-Benz</span><strong>C Class <b>(W205)</b></strong><small>2014 – 2021</small><p>Premium compact executive car<br>Sedan / Estate</p></div><div class="w205-ntg6-car"><img src="assets/E4816D68-A4FD-41A5-AA38-B9D352706EB1.png?v=1" alt="Mercedes-Benz W205"></div></div><h1>Mercedes Benz multimedia NTG 6</h1><div class="blue-line"></div>
+<section class="oem-detail-card w205-ntg6-card"><figure class="ntg6-photo"><img src="assets/5BBD201D-2BB2-43CA-AF6A-885EB2199949.png?v=20261020" alt="Mercedes-Benz C Class W205 NTG 6 multimedia"></figure><div class="oem-detail-caption">Replacing the factory screen with a new one in a modern style.</div></section>
 </main>
-<footer class="site-footer"><a class="logo" href="index.html"><img src="scw-logo-final.svg?v=20260927-1215" alt="SCW"><small>SMIRNOV CUSTOM WORKS</small></a><div class="footer-contact">info@scw-group.com · Cyprus</div><div class="footer-copy">© 2026 SCW Group</div><div class="footer-status"><strong>SCW ONLINE • AUTOMATIC DEPLOY ACTIVE</strong></div></footer>
+<footer class="site-footer"><a class="logo" href="index.html"><img class="scw-logo-img" src="scw-logo-final.svg?v=20260927-1215" alt="SCW"><small>SMIRNOV CUSTOM WORKS</small></a><div class="footer-contact">info@scw-group.com · Cyprus</div><div class="footer-copy">© 2026 SCW Group</div><div class="footer-status"><strong>SCW ONLINE • AUTOMATIC DEPLOY ACTIVE</strong></div></footer>
 </body></html>
