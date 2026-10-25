@@ -1,0 +1,18 @@
+/* Independent A-Class W176 multimedia card imagery. */
+(()=>{const q=new URLSearchParams(location.search);if(q.get("brand")!=="Mercedes-Benz"||q.get("model")!=="A Class (W176)")return;
+const cards=document.querySelectorAll("#multimedia-cards article");
+const photos=["assets/5947BC6A-3FB4-4615-8A48-D2420B25F9C8.png?v=20261025","assets/1F1354B9-FAA9-4FC8-8851-C6CAF192D85A.png?v=20261025","assets/0B42B304-7919-4323-90C4-FA73708B2CE3.png?v=20261025"];
+const style=document.createElement("style");style.textContent=`
+body.scw-w176-multimedia #multimedia-cards{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:18px!important;align-items:start!important}
+body.scw-w176-multimedia #multimedia-cards article{min-width:0!important;height:auto!important;min-height:0!important;align-self:start!important;padding:0!important;overflow:hidden!important;border:1px solid #30363a!important;border-radius:12px!important;background:#101417!important}
+body.scw-w176-multimedia #multimedia-cards .multimedia-card-link{display:block!important;height:auto!important;text-decoration:none!important}
+body.scw-w176-multimedia #multimedia-cards .multimedia-photo{display:flex!important;align-items:flex-end!important;justify-content:center!important;aspect-ratio:16/10!important;height:auto!important;min-height:0!important;overflow:hidden!important;background:#fff!important;padding:0!important}
+body.scw-w176-multimedia #multimedia-cards .multimedia-photo img{display:block!important;width:100%!important;height:100%!important;object-fit:contain!important;object-position:center bottom!important;transform:none!important}
+body.scw-w176-multimedia #multimedia-cards .multimedia-caption{display:block!important;height:auto!important;min-height:0!important;padding:15px 17px!important;background:#101417!important;color:#fff!important}
+body.scw-w176-multimedia #multimedia-cards .multimedia-caption-meta{display:flex!important;justify-content:space-between!important;gap:8px!important;margin-top:8px!important;color:#b8bec3!important}
+body.scw-w176-multimedia #multimedia-cards .multimedia-select{color:#ff4653!important}
+@media(max-width:900px){body.scw-w176-multimedia #multimedia-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:650px){body.scw-w176-multimedia #multimedia-cards{grid-template-columns:1fr!important}}
+`;document.head.append(style);document.body.classList.add("scw-w176-multimedia");
+cards.forEach((card,i)=>{if(i>=photos.length)return;const img=card.querySelector(".multimedia-photo img")||card.querySelector("img");if(!img)return;img.src=photos[i];img.removeAttribute("srcset");img.onerror=null;const photo=img.closest(".multimedia-photo");if(photo)photo.classList.remove("placeholder")});
+})();
