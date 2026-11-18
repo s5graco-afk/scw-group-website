@@ -234,7 +234,7 @@ a.card:hover{border-color:var(--c-accent);transform:translateY(-2px)}
   margin:0;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;
   background:var(--c-photo);overflow:hidden;
 }
-.card-media img{display:block;width:100%;height:100%;object-fit:cover}
+.card-media img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top} /* dashboard shots: keep the white studio area above the screen */
 .card-media.is-padded{aspect-ratio:16/10;padding:18px}
 .card-media.is-padded img{object-fit:contain}
 .card-media.is-natural{aspect-ratio:auto}
