@@ -72,7 +72,7 @@
 - `.vehicle-hero` — марка / модель `<h1>3 Series <span>(F30)</span></h1>` / годы / текст / фото
 - `.service-grid` + `.service-tile` (`.is-soon` — услуга пока недоступна)
 - `.card-grid` (+`.is-narrow`) + `.card` → `.card-media` (по умолчанию фото 16:9 на всю
-  площадь без белых полей; `.is-padded` — предмет на белом фоне; `.is-natural` — квадратные/высокие фото целиком) + `.card-body` (`.card-label`, `h3`, `p`, `.card-cta`).
+  площадь без белых полей; `.is-padded` — предмет на белом фоне; `.is-natural` — квадратные/высокие фото целиком) (под фото тонкая белая линия — `--card-media-line`) + `.card-body` (`.card-label`, `h3`, `p`, `.card-cta`).
   Кликабельная карточка — `<a class="card">`.
 - `.detail` → `.gallery[data-gallery] > .gallery-track > img…` + `.detail-body.options`
 - `.options` + `details.option > summary + .option-text` (`.options.is-plain` — длинные списки)

@@ -46,6 +46,7 @@
   --page-pad:25px;
   --gap:20px;
   --shadow:0 15px 42px rgba(0,0,0,.18);
+  --card-media-line:1px solid #fff;
 }
 @media(max-width:900px){
   :root{--fs-h1:29px;--fs-hero:42px;--gap:18px;--radius:8px}
@@ -233,6 +234,7 @@ a.card:hover{border-color:var(--c-accent);transform:translateY(-2px)}
 .card-media{
   margin:0;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;
   background:var(--c-photo);overflow:hidden;
+  border-bottom:var(--card-media-line); /* thin white line between photo and caption */
 }
 .card-media img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top} /* dashboard shots: keep the white studio area above the screen */
 .card-media.is-padded{aspect-ratio:16/10;padding:18px}
