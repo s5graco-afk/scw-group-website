@@ -32,6 +32,8 @@
 7. Перед добавлением фото: макс. ширина **1600 px**, формат WebP или JPEG (качество ~80),
    вес до ~300 КБ, **удалить EXIF/GPS**. Имя файла по смыслу:
    `assets/bmw-f30-nbt-carplay-1.webp`, а не UUID.
+   Сжатие: `node _tools/optimize-image.mjs <исходник> assets/<имя>.webp [ширина]`.
+   Картинка для соцсетей (`og:image`) — JPEG 1200×630: `assets/{brand}-{chassis}-og.jpg`.
 8. У каждого `<img>` есть осмысленный `alt`; все картинки ниже первого экрана —
    `loading="lazy"`.
 
@@ -57,7 +59,7 @@
 | Тюнинг (таблица мощности) | `_templates/tuning.html` | `bmw-g01-tuning.html` |
 | Кодирование (список функций) | `_templates/coding.html` | `bmw-f45-coding.html` |
 
-Навигация: `models.html?brand=…` → хаб модели → раздел → решение.
+Навигация: `models.html?brand=…` (у модели в списке `d` указать `page:"bmw-f30.html"`) → хаб модели → раздел → решение.
 Ссылка «назад» (`.back-link`) всегда ведёт на уровень выше, без пустых параметров.
 
 ## Компоненты `scw.css` (кратко)
@@ -91,7 +93,7 @@
 из Google, оставлять как страницы-переадресации.
 
 - [x] Дизайн-система `scw.css`, `scw.js`, шаблоны
-- [ ] Пилот: BMW F30
+- [x] Пилот: BMW F30 (`bmw-f30*.html`; старые `vehicle.html`/`solution.html` с параметрами F30 переадресуют сюда, в `models.html` у модели поле `page`)
 - [ ] Остальные BMW
 - [ ] Mercedes-Benz
 - [ ] Audi, Lexus, Toyota, Suzuki, SLK
