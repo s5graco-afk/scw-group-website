@@ -244,6 +244,9 @@ a.card:hover{border-color:var(--c-accent);transform:translateY(-2px)}
 .card-media.is-padded img{object-fit:contain}
 .card-media.is-natural{aspect-ratio:auto}
 .card-media.is-natural img{height:auto}
+/* .is-pending — no photo yet: dark panel with a short caption */
+.card-media.is-pending{background:var(--c-surface);border-bottom-color:var(--c-line)}
+.card-media.is-pending span{color:var(--c-text-3);font-size:var(--fs-xs);font-weight:700;letter-spacing:2px;text-transform:uppercase;text-align:center;padding:0 16px}
 .card-body{flex:1;padding:15px 17px 18px;background:var(--c-card-caption)}
 .card-label{display:block;margin-bottom:8px;color:var(--c-accent);font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
 .card-body h3{margin:0 0 7px;font-size:var(--fs-h3);line-height:1.4;color:var(--c-text-strong)}
@@ -328,12 +331,15 @@ a.choice:hover{border-color:var(--c-accent)}
 
 /* ---------- 12. Spec table (tuning) ---------- */
 .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:24px 0 0;border:1px solid var(--c-line-faint);border-radius:14px;background:#101417}
-.spec-table{width:100%;border-collapse:collapse;min-width:520px}
+.spec-table{width:100%;border-collapse:collapse}
 .spec-table th,.spec-table td{padding:15px 18px;text-align:left;border-bottom:1px solid var(--c-line-faint)}
 .spec-table tr:last-child td{border-bottom:0}
 .spec-table th{background:var(--c-surface);color:#8f969d;font-size:var(--fs-m);letter-spacing:1.04px;text-transform:uppercase}
 .spec-table td{font-size:15px;font-weight:700}
 .spec-table td.is-accent{color:var(--c-accent)}
+/* Tag list — short option chips (tuning stages etc.) */
+.tag-list{display:flex;flex-wrap:wrap;gap:9px;margin:10px 0 0}
+.tag-list span{padding:6px 12px;border:1px solid rgba(240,24,39,.55);border-radius:20px;color:#e8e8e8;font-size:var(--fs-m)}
 .table-note{margin:14px 0 0;color:var(--c-text-3);font-size:var(--fs-s);line-height:1.5}
 @media(max-width:900px){.spec-table th,.spec-table td{padding:12px 14px;font-size:var(--fs-s)}}
 

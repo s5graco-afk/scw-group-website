@@ -77,7 +77,8 @@
 - `.detail` → `.gallery[data-gallery] > .gallery-track > img…` + `.detail-body.options`
 - `.options` + `details.option > summary + .option-text` (`.options.is-plain` — длинные списки)
 - `.choice-list` + `.choice` (`.has-dot`, `.is-soon`) — выбор модели, типа топлива и т.п.
-- `.table-wrap > table.spec-table` (`td.is-accent` — красное значение) + `.table-note`
+- `.table-wrap > table.spec-table` (`td.is-accent` — красное значение) + `.table-note` + `.tag-list > span` (метки опций)
+- `.card-media.is-pending > span` — фото пока нет («Photo coming soon»)
 - `.news-grid` + `.news-card` (`.news-date`, `h2`, `p`, ссылка)
 - `.btn`, `.btn-ghost`
 
@@ -153,7 +154,10 @@
 
 - [x] Дизайн-система `scw.css`, `scw.js`, шаблоны
 - [x] Пилот: BMW F30 (`bmw-f30*.html`; старые `vehicle.html`/`solution.html` с параметрами F30 переадресуют сюда, в `models.html` у модели поле `page`)
-- [ ] Остальные BMW
+- [x] Остальные BMW — все 14 моделей: хаб `bmw-{кузов}.html`, `-multimedia.html`, страницы систем, `-tuning.html`
+  (бензин/дизель/гибрид на одной странице). Старые `vehicle.html`/`solution.html`/`tuning-fuel.html`
+  с параметрами BMW, `oem1-3.html` для E90 и `tuning-e81/f20/f33/g01/g02.html`, `tuning.html` переадресуют сюда.
+  Кодирование BMW пока на общем `coding.html?brand=…&model=…`.
 - [ ] Mercedes-Benz
 - [ ] Audi, Lexus, Toyota, Suzuki, SLK
 - [ ] Главная, новости, каталог моделей, тюнинг
