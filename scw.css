@@ -227,13 +227,18 @@ a.service-tile:hover{transform:translateY(-2px)}
 }
 a.card{transition:border-color .2s,transform .2s}
 a.card:hover{border-color:var(--c-accent);transform:translateY(-2px)}
+/* Default: photo fills a 16:9 frame edge to edge (no white bands).
+   .is-padded  — product shot on white, whole object visible (cameras etc.)
+   .is-natural — keep the photo's own proportions (square / tall photos) */
 .card-media{
-  margin:0;aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;
+  margin:0;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;
   background:var(--c-photo);overflow:hidden;
 }
-.card-media img{display:block;width:100%;height:100%;object-fit:contain}
-.card-media.is-cover img{object-fit:cover}
-.card-media.is-padded{padding:18px}
+.card-media img{display:block;width:100%;height:100%;object-fit:cover}
+.card-media.is-padded{aspect-ratio:16/10;padding:18px}
+.card-media.is-padded img{object-fit:contain}
+.card-media.is-natural{aspect-ratio:auto}
+.card-media.is-natural img{height:auto}
 .card-body{flex:1;padding:15px 17px 18px;background:var(--c-card-caption)}
 .card-label{display:block;margin-bottom:8px;color:var(--c-accent);font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
 .card-body h3{margin:0 0 7px;font-size:var(--fs-h3);line-height:1.4;color:var(--c-text-strong)}
