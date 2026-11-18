@@ -81,6 +81,62 @@
 - `.news-grid` + `.news-card` (`.news-date`, `h2`, `p`, ссылка)
 - `.btn`, `.btn-ghost`
 
+## Стандарт карточки (утверждён владельцем)
+
+Карточка — главный блок сайта: фото сверху, текст снизу. Все карточки делаются
+**только так**, без своих стилей.
+
+**Как выглядит**
+- Тёмная полупрозрачная плашка, тонкая светлая рамка, скругление 10 px
+  (8 px на телефоне), мягкая тень.
+- Сверху — **красная полоска**, тающая к середине.
+- **Фото** — формат **16:9**, заполняет карточку от края до края (без белых полос по бокам
+  и сверху/снизу), выровнено **по верху**: над экраном видно белое «студийное» поле.
+- Между фото и текстом — **тонкая белая линия** (1 px, токен `--card-media-line`).
+- **Текст** на тёмном градиенте: красная подпись (по желанию) → белый заголовок →
+  серый текст 1–2 предложения → красная ссылка «Select →» (только у кликабельных).
+- Сетка: 2 колонки на компьютере, 1 на телефоне. Список выбора — `card-grid is-narrow`.
+
+**Три вида фото**
+| Что на фото | Класс | Как подготовить |
+| --- | --- | --- |
+| Салон / экран (основной случай) | `card-media` | 16:9, белое поле над торпедо (см. правило 7) |
+| Предмет на белом фоне (камера, блок) | `card-media is-padded` | целиком, с отступом, фон белый |
+| Квадратное / высокое фото | `card-media is-natural` | показывается целиком, без обрезки |
+
+**Тексты**
+- Апгрейд мультимедиа: подпись `Multimedia upgrade`, заголовок
+  `BMW Multimedia Upgrade — Option 1`, текст — что делаем, 1–2 предложения.
+  Ограничения выделять `<strong>`: `<strong>Android Auto is not supported by this system.</strong>`
+- Программное обновление: подпись `Software upgrade`.
+- Доп. оборудование (камеры и т.п.): **без подписи**, фото `is-padded`, раздел
+  `<h2 class="section-title">Additional Equipment</h2>`.
+- Выбор системы (кликабельная): заголовок `BMW iDrive NBT`, текст `Original display`,
+  `<span class="card-cta">Select →</span>`.
+- `alt` фото: что на нём + модель: `BMW F30 original screen with Apple CarPlay`.
+
+**Код**
+```html
+<!-- информационная карточка -->
+<article class="card">
+  <figure class="card-media"><img src="assets/bmw-f30-carplay-original-screen.webp" alt="BMW F30 original screen with Apple CarPlay and Android Auto" loading="lazy"></figure>
+  <div class="card-body"><span class="card-label">Multimedia upgrade</span><h3>BMW Multimedia Upgrade — Option 1</h3><p>Adding modern Apple CarPlay and Android Auto functionality to the existing screen without replacing it.</p></div>
+</article>
+
+<!-- кликабельная карточка выбора -->
+<a class="card" href="bmw-f30-nbt.html">
+  <figure class="card-media"><img src="assets/bmw-f30-cic-nbt.webp" alt="BMW iDrive NBT in BMW 3 Series F30" loading="lazy"></figure>
+  <div class="card-body"><h3>BMW iDrive NBT</h3><p>Original display</p><span class="card-cta">Select →</span></div>
+</a>
+
+<!-- оборудование: предмет на белом -->
+<article class="card">
+  <figure class="card-media is-padded"><img src="assets/bmw-rear-view-camera.webp" alt="Rear-view camera for BMW 3 Series F30" loading="lazy"></figure>
+  <div class="card-body"><h3>Rear-view camera</h3><p>…</p></div>
+</article>
+```
+Живой пример всех вариантов — страницы `bmw-f30-*.html`.
+
 ## Проверка перед пушем
 - Открыть страницу на ширине **390 px** и **1366 px**: нет горизонтальной прокрутки,
   ничего не наезжает.

@@ -208,10 +208,13 @@ a.service-tile:hover{transform:translateY(-2px)}
 @media(max-width:900px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}}
 
 /* ---------- 9. Card (solution, equipment, any photo + text) ----------
-   <article class="card">            ← add .card-link on an <a> to make it clickable
-     <figure class="card-media">      ← .is-padded for small product shots
+   The card standard is described in CLAUDE.md → «Стандарт карточки».
+   <article class="card">  (or <a class="card" href> for a clickable card)
+     <figure class="card-media">   default 16:9 photo, filled, anchored to top
+                                   .is-padded  product shot on white
+                                   .is-natural square / tall photo, uncropped
      <div class="card-body">
-       <span class="card-label">     ← optional red label
+       <span class="card-label">   optional red label
        <h3> <p> <span class="card-cta">
    ----------------------------------------------------------------- */
 .card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap);margin:22px 0 34px}
