@@ -169,8 +169,9 @@
   `.model-card`, `.gen` (`.is-ok`) в scw.css, фильтры — `[data-catalog]` в scw.js.
   `models.html?brand=Mercedes-Benz` переадресует сюда. Так же сделана `bmw-models.html` (поколения без страницы —
   `<span class="gen">`, не кликабельные; со страницей-заглушкой — `<a class="gen">` без `.is-ok`). Для других марок — по просьбе владельца.
-- BMW 1 Series F40, F70 — страницы модели без контента (`bmw-f40.html`, `bmw-f70.html`, генератор как у заглушек Mercedes):
-  фото, годы, все услуги «coming soon», Get a quote. Мультимедиа/системы — когда владелец даст контент.
+- BMW 1 Series F40 — хаб `bmw-f40.html` (активна только мультимедиа), `bmw-f40-multimedia.html`, системы
+  `bmw-f40-idrive7-8-8.html` (активация CarPlay/AA или замена на 10,25″) и `bmw-f40-idrive7-10-25.html` (активация).
+- BMW 1 Series F70 — страница модели без контента (`bmw-f70.html`): все услуги «coming soon», Get a quote.
 - [ ] Audi, Lexus, Toyota, Suzuki, SLK
 - [ ] Главная, новости, каталог моделей, тюнинг
 - [ ] Удалить `styles.css` и старые скрипты
