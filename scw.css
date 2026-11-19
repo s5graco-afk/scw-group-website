@@ -204,6 +204,7 @@ h1,h2,h3{color:var(--c-text)}
 /* Tile frame is drawn here (icons are transparent PNG/WebP 5:4 with glyph + label only) */
 .service-tile{
   display:flex;align-items:center;justify-content:center;aspect-ratio:5/4;overflow:hidden;
+  width:80%;justify-self:center; /* tiles at 80% of the grid cell */
   border:1px solid rgba(220,226,232,.42);border-radius:16px;background:rgba(9,12,15,.62);
   text-decoration:none;transition:transform .2s ease,border-color .2s ease;
 }
