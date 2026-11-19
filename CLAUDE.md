@@ -170,7 +170,7 @@
   `models.html?brand=Mercedes-Benz` переадресует сюда. Так же сделана `bmw-models.html` (поколения без страницы —
   `<span class="gen">`, не кликабельные; со страницей-заглушкой — `<a class="gen">` без `.is-ok`). Для других марок — по просьбе владельца.
 - BMW 1 Series F40 — хаб `bmw-f40.html` (активна только мультимедиа), `bmw-f40-multimedia.html` (одна система),
-  `bmw-f40-idrive7.html` (активация CarPlay/AA или замена на экран 10,25″).
+  `bmw-f40-idrive7.html` (как `bmw-g02-oem2.html`: галерея + список опций).
 - BMW 1 Series F70 — страница модели без контента (`bmw-f70.html`): все услуги «coming soon», Get a quote.
 - [ ] Audi, Lexus, Toyota, Suzuki, SLK
 - [ ] Главная, новости, каталог моделей, тюнинг
