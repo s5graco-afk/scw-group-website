@@ -79,7 +79,7 @@
 - `.choice-list` + `.choice` (`.has-dot`, `.is-soon`) — выбор модели, типа топлива и т.п.
 - `.table-wrap > table.spec-table` (`td.is-accent` — красное значение) + `.table-note` + `.tag-list > span` (метки опций)
 - `.card-media.is-pending > span` — фото пока нет («Photo coming soon»)
-- Страница марки: `.filter-bar` + `.filter-chip` (`data-filter`, `data-only-ok`), `.model-list` > `.model-card[data-cat]` > `.model-thumb` + `.model-body` > `.gen-grid` > `a.gen` (`.is-ok` — есть решения), `.help-box`; контейнер `main[data-catalog]`
+- Страница марки: `.filter-bar` + `.filter-chip` (`data-filter`, `data-only-ok`), `.model-list` > `.model-card[data-cat]` > `.model-thumb` + `.model-body` > `.gen-grid` > `a.gen` (`.is-ok` — есть решения), контейнер `main[data-catalog]`
 - `.news-grid` + `.news-card` (`.news-date`, `h2`, `p`, ссылка)
 - `.btn`, `.btn-ghost`
 
@@ -165,7 +165,7 @@
   Остальные 20 моделей (W177, W247, EQ… ) — страницы-заглушки `mercedes-{кузов}.html` (решение владельца):
   все услуги «coming soon» + кнопка Get a quote. Когда появится контент — заменить заглушку на хаб.
 - [x] Страница выбора моделей Mercedes — `mercedes-models.html` (модель → кнопки поколений, фото, красная
-  метка «есть решения», фильтры по типу кузова, кнопка VIN). Компоненты `.filter-bar`, `.model-list`,
+  метка «есть решения», фильтры по типу кузова; блок с VIN владелец попросил убрать). Компоненты `.filter-bar`, `.model-list`,
   `.model-card`, `.gen` (`.is-ok`) в scw.css, фильтры — `[data-catalog]` в scw.js.
   `models.html?brand=Mercedes-Benz` переадресует сюда. Так же сделана `bmw-models.html` (поколения без страницы —
   `<span class="gen">`, не кликабельные). Для других марок — по просьбе владельца.
