@@ -158,7 +158,10 @@
   (бензин/дизель/гибрид на одной странице). Старые `vehicle.html`/`solution.html`/`tuning-fuel.html`
   с параметрами BMW, `oem1-3.html` для E90 и `tuning-e81/f20/f33/g01/g02.html`, `tuning.html` переадресуют сюда.
   Кодирование BMW пока на общем `coding.html?brand=…&model=…`.
-- [ ] Mercedes-Benz
+- [~] Mercedes-Benz — перенесены 9 моделей с реальным контентом (W176, W246, CLA C117, GLA X156, W204,
+  W205, W212, W222, SLK R172): `mercedes-{кузов}.html`, `-multimedia.html`, `-{система}.html`.
+  Тюнинг Mercedes — «coming soon» (данных нет; раньше по ошибке открывалась таблица BMW F45).
+  Остальные 20 моделей каталога пока на старых общих `oem1-3.html` (фото W204) — ждём решения владельца.
 - [ ] Audi, Lexus, Toyota, Suzuki, SLK
 - [ ] Главная, новости, каталог моделей, тюнинг
 - [ ] Удалить `styles.css` и старые скрипты
