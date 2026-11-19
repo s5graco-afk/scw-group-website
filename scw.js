@@ -92,6 +92,37 @@
     show(0);
   }
 
+  /* ---- Model catalog filters (brand page) ---- */
+  function initCatalog(root) {
+    const chips = [...root.querySelectorAll('[data-filter]')];
+    const only = root.querySelector('[data-only-ok]');
+    const cards = [...root.querySelectorAll('.model-card')];
+    const empty = root.querySelector('[data-empty]');
+    let cat = 'all', onlyOk = false;
+    const apply = () => {
+      let shown = 0;
+      cards.forEach((c) => {
+        const gens = [...c.querySelectorAll('.gen')];
+        gens.forEach((g) => (g.hidden = onlyOk && !g.classList.contains('is-ok')));
+        const vis = gens.filter((g) => !g.hidden).length;
+        c.hidden = !((cat === 'all' || c.dataset.cat === cat) && vis);
+        const n = c.querySelector('[data-count]');
+        if (n) n.textContent = vis === 1 ? '1 generation' : vis + ' generations';
+        if (!c.hidden) shown++;
+      });
+      chips.forEach((b) => b.classList.toggle('is-active', b.dataset.filter === cat));
+      if (only) {
+        only.classList.toggle('is-active', onlyOk);
+        only.setAttribute('aria-pressed', onlyOk);
+        only.textContent = onlyOk ? 'Showing models with solutions' : 'Show only models with solutions';
+      }
+      if (empty) empty.hidden = shown > 0;
+    };
+    chips.forEach((b) => b.addEventListener('click', () => { cat = b.dataset.filter; apply(); }));
+    if (only) only.addEventListener('click', () => { onlyOk = !onlyOk; apply(); });
+    apply();
+  }
+
   /* ---- Analytics ---- */
   function loadAnalytics() {
     const s = document.createElement('script');
@@ -104,5 +135,6 @@
   if (header && !header.children.length) renderHeader(header);
   if (footer && !footer.children.length) renderFooter(footer);
   document.querySelectorAll('[data-gallery]').forEach(initGallery);
+  document.querySelectorAll('[data-catalog]').forEach(initCatalog);
   loadAnalytics();
 })();
