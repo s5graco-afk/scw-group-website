@@ -167,7 +167,8 @@
 - [x] Страница выбора моделей Mercedes — `mercedes-models.html` (модель → кнопки поколений, фото, красная
   метка «есть решения», фильтры по типу кузова, кнопка VIN). Компоненты `.filter-bar`, `.model-list`,
   `.model-card`, `.gen` (`.is-ok`) в scw.css, фильтры — `[data-catalog]` в scw.js.
-  `models.html?brand=Mercedes-Benz` переадресует сюда. Для других марок — сделать так же по просьбе владельца.
+  `models.html?brand=Mercedes-Benz` переадресует сюда. Так же сделана `bmw-models.html` (поколения без страницы —
+  `<span class="gen">`, не кликабельные). Для других марок — по просьбе владельца.
 - [ ] Audi, Lexus, Toyota, Suzuki, SLK
 - [ ] Главная, новости, каталог моделей, тюнинг
 - [ ] Удалить `styles.css` и старые скрипты
