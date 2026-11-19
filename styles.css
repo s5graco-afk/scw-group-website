@@ -1019,3 +1019,12 @@ main,.catalog{background:transparent!important}
 @media(max-width:700px){.oem-detail-card > img{padding:0!important}}
 /* Small equipment product shots keep their deliberate white studio area. */
 .a4-equipment-card .a4-equipment-photo-wrap img{padding:0!important}
+
+/* Home: brand tiles with chrome logos (owner request 2026-11-19).
+   Red stripe on top fading to the right, soft red glow behind the logo, name in caps under it. */
+.brandgrid a{position:relative;overflow:hidden;min-height:150px;padding:18px 10px;gap:12px;background:radial-gradient(ellipse at 50% 45%,rgba(240,24,39,.18),transparent 62%),#111518;border-radius:10px;transition:border-color .2s,transform .2s}
+.brandgrid a:before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#f01827,transparent 70%)}
+.brandgrid a:hover{border-color:#f01827;transform:translateY(-2px)}
+.brandgrid .brand-logo{height:64px;width:auto;max-width:70%;object-fit:contain;filter:drop-shadow(0 6px 12px rgba(0,0,0,.6))}
+.brandgrid a strong{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#cfd5d9}
+.brandgrid a:last-child strong{font-size:30px;letter-spacing:0}
