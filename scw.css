@@ -200,11 +200,16 @@ h1,h2,h3{color:var(--c-text)}
 }
 
 /* ---------- 8. Service tiles (model hub) ---------- */
-.service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-width:900px;margin:30px 0 0}
-.service-tile{display:block;width:92%;justify-self:center;overflow:hidden;text-decoration:none;transition:transform .2s ease}
-.service-tile img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:contain}
-a.service-tile:hover{transform:translateY(-2px)}
-.service-tile.is-soon{opacity:.55;pointer-events:none;cursor:default}
+.service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;max-width:900px;margin:30px 0 0}
+/* Tile frame is drawn here (icons are transparent PNG/WebP 5:4 with glyph + label only) */
+.service-tile{
+  display:flex;align-items:center;justify-content:center;aspect-ratio:5/4;overflow:hidden;
+  border:1px solid rgba(220,226,232,.42);border-radius:16px;background:rgba(9,12,15,.62);
+  text-decoration:none;transition:transform .2s ease,border-color .2s ease;
+}
+.service-tile img{display:block;width:100%;height:100%;object-fit:contain}
+a.service-tile:hover{transform:translateY(-2px);border-color:var(--c-accent)}
+.service-tile.is-soon{opacity:.45;pointer-events:none;cursor:default}
 @media(max-width:900px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}}
 
 /* ---------- 9. Card (solution, equipment, any photo + text) ----------
