@@ -168,7 +168,9 @@
   метка «есть решения», кнопка «только с решениями» и метка «Solutions available»; фильтры по типу кузова и блок с VIN владелец попросил убрать). Компоненты `.filter-bar`, `.model-list`,
   `.model-card`, `.gen` (`.is-ok`) в scw.css, фильтры — `[data-catalog]` в scw.js.
   `models.html?brand=Mercedes-Benz` переадресует сюда. Так же сделана `bmw-models.html` (поколения без страницы —
-  `<span class="gen">`, не кликабельные; со страницей-заглушкой — `<a class="gen">` без `.is-ok`). Для других марок — по просьбе владельца.
+  `<span class="gen">`, не кликабельные; со страницей-заглушкой — `<a class="gen">` без `.is-ok`). Для остальных марок (MINI, Audi, Porsche, Lexus, Honda, Suzuki, Volkswagen, Toyota, Jaguar, Land Rover, Volvo) — `{марка}-models.html`
+  в том же стиле (данные из старого `models.html`, генератор `gen_brand_models.py`); модели с решениями пока ведут на старые `vehicle.html?brand=…&model=…`;
+  у марок без списка моделей — текст + Get a quote. Ссылки в `index.html`, `multimedia.html`, `news.html` ведут прямо сюда, `models.html?brand=…` переадресует.
 - BMW 1 Series F40 — хаб `bmw-f40.html` (активна только мультимедиа), `bmw-f40-multimedia.html` (одна система),
   `bmw-f40-idrive7.html` (как `bmw-g02-oem2.html`: галерея + список опций).
 - Mercedes W206 — хаб `mercedes-w206.html` (активна мультимедиа), `-multimedia.html`, `mercedes-w206-ntg7.html`
