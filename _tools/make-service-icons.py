@@ -29,5 +29,5 @@ for k,v in srcs.items():
     s=min(W*BOX_W/g.width,H*BOX_H/g.height)
     g=g.resize((round(g.width*s),round(g.height*s)),Image.LANCZOS)
     c=Image.new('RGBA',(W,H),(0,0,0,0)); c.paste(g,((W-g.width)//2,(H-g.height)//2),g)
-    c.save(f'assets/service-{"sound-isolation" if k=="sound" else k}.webp','WEBP',quality=88,method=6)
+    c.save(f'assets/icon-service-{"sound-isolation" if k=="sound" else k}.webp','WEBP',quality=88,method=6)
     print(k,'glyph',g.size)
