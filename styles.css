@@ -1027,4 +1027,3 @@ main,.catalog{background:transparent!important}
 .brandgrid a:hover{border-color:#f01827;transform:translateY(-2px)}
 .brandgrid .brand-logo{height:64px;width:auto;max-width:70%;object-fit:contain;filter:drop-shadow(0 6px 12px rgba(0,0,0,.6))}
 .brandgrid a strong{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#cfd5d9}
-.brandgrid a:last-child strong{font-size:30px;letter-spacing:0}
