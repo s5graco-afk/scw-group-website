@@ -179,6 +179,7 @@
 - Mercedes W206 — хаб `mercedes-w206.html` (активна мультимедиа), `-multimedia.html`, `mercedes-w206-ntg7.html`
   (полная копия W205 NTG 6, по просьбе владельца; фото тоже от W205 NTG 6, пока нет своего).
 - BMW X4 F26 — хаб `bmw-f26.html` (мультимедиа, тюнинг `bmw-f26-tuning.html`, кодинг `bmw-f26-coding.html`), `-multimedia.html`, системы `bmw-f26-cic`, `-nbt`, `-nbt-evo.html` (как F30 CIC High / NBT / NBT Evo ID5/6, фото свои F26).
+- BMW X3 F25 — хаб `bmw-f25.html` (фото машины пока нет), мультимедиа = полная копия X4 F26 (`bmw-f25-multimedia`, `-cic`, `-nbt`, `-nbt-evo.html`).
 - BMW X7 G07 — хаб `bmw-g07.html` (активна мультимедиа), `-multimedia.html`, `bmw-g07-idrive8.html` (как F40 iDrive 7: фото + список опций).
 - BMW F70, G42, G20, Z4 E85, i3, i4, i5, i8, iX, X3 G45, 7 Series/i7 G70 (одна страница) — страницы модели без контента (`bmw-f70`, `-g42`, `-g20`, `-e85`, `-i01`, `-g26`, `-g60`, `-i12`, `-i20`, `-g45`, `-g70.html`; генератор `gen_bmw_soon.py`): все услуги «coming soon», Get a quote.
 - [ ] Audi, Lexus, Toyota, Suzuki, SLK
