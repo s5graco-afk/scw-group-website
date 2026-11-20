@@ -178,7 +178,7 @@
   `bmw-f40-idrive7.html` (как `bmw-g02-oem2.html`: галерея + список опций).
 - Mercedes W206 — хаб `mercedes-w206.html` (активна мультимедиа), `-multimedia.html`, `mercedes-w206-ntg7.html`
   (полная копия W205 NTG 6, по просьбе владельца; фото тоже от W205 NTG 6, пока нет своего).
-- BMW F70, G42, G20 — страницы модели без контента (`bmw-f70.html`, `bmw-g42.html`, `bmw-g20.html`): все услуги «coming soon», Get a quote.
+- BMW F70, G42, G20, Z4 E85 — страницы модели без контента (`bmw-f70.html`, `bmw-g42.html`, `bmw-g20.html`, `bmw-e85.html`): все услуги «coming soon», Get a quote.
 - [ ] Audi, Lexus, Toyota, Suzuki, SLK
 - Главная: плитки марок с хромированными логотипами `assets/logo-{марка}.webp` (прозрачный фон, ~400 px),
   стиль — в конце `styles.css` (главная ещё на старых стилях). Есть у всех марок (Honda — чёрная эмблема, осветлена до серебра).
