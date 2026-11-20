@@ -178,6 +178,7 @@
   `bmw-f40-idrive7.html` (как `bmw-g02-oem2.html`: галерея + список опций).
 - Mercedes W206 — хаб `mercedes-w206.html` (активна мультимедиа), `-multimedia.html`, `mercedes-w206-ntg7.html`
   (полная копия W205 NTG 6, по просьбе владельца; фото тоже от W205 NTG 6, пока нет своего).
+- BMW X7 G07 — хаб `bmw-g07.html` (активна мультимедиа), `-multimedia.html`, `bmw-g07-idrive8.html` (как F40 iDrive 7: фото + список опций).
 - BMW F70, G42, G20, Z4 E85, i3, i4, i5, i8, iX, X3 G45, 7 Series/i7 G70 (одна страница) — страницы модели без контента (`bmw-f70`, `-g42`, `-g20`, `-e85`, `-i01`, `-g26`, `-g60`, `-i12`, `-i20`, `-g45`, `-g70.html`; генератор `gen_bmw_soon.py`): все услуги «coming soon», Get a quote.
 - [ ] Audi, Lexus, Toyota, Suzuki, SLK
 - Главная: плитки марок с хромированными логотипами `assets/logo-{марка}.webp` (прозрачный фон, ~400 px),
