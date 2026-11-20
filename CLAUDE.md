@@ -161,7 +161,7 @@
   (бензин/дизель/гибрид на одной странице). Старые `vehicle.html`/`solution.html`/`tuning-fuel.html`
   с параметрами BMW, `oem1-3.html` для E90 и `tuning-e81/f20/f33/g01/g02.html`, `tuning.html` переадресуют сюда.
   Кодирование — отдельные страницы `{хаб}-coding.html` (BMW и Mercedes, генератор `tools/gen_coding.py`); списки функций есть
-  у F45/F46, G01, G02, у остальных «list is being prepared» + Get a quote. Старый `coding.html?brand&model` переадресует.
+  у F45/F46 и G01 (у G02 владелец попросил убрать), у остальных «list is being prepared» + Get a quote. Старый `coding.html?brand&model` переадресует.
 - [x] Mercedes-Benz — перенесены 9 моделей с реальным контентом (W176, W246, CLA C117, GLA X156, W204,
   W205, W212, W222, SLK R172): `mercedes-{кузов}.html`, `-multimedia.html`, `-{система}.html`.
   Тюнинг Mercedes — «coming soon» (данных нет; раньше по ошибке открывалась таблица BMW F45).
