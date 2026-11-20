@@ -348,11 +348,16 @@ a.choice:hover{border-color:var(--c-accent)}
 .spec-table th{background:var(--c-surface);color:#8f969d;font-size:var(--fs-m);letter-spacing:1.04px;text-transform:uppercase}
 .spec-table td{font-size:15px;font-weight:700}
 .spec-table td.is-accent{color:var(--c-accent)}
+/* Two-line value: power (bold) over torque (small, grey). Last column = gain ("+66 hp / +70 Nm"). */
+.spec-table td b{display:block;white-space:nowrap}
+.spec-table td small{display:block;margin-top:3px;color:var(--c-text-3);font-size:var(--fs-m);font-weight:400;white-space:nowrap}
+.spec-table td.is-accent small{color:var(--c-accent-soft)}
 /* Tag list — short option chips (tuning stages etc.) */
 .tag-list{display:flex;flex-wrap:wrap;gap:9px;margin:10px 0 0}
 .tag-list span{padding:6px 12px;border:1px solid rgba(240,24,39,.55);border-radius:20px;color:#e8e8e8;font-size:var(--fs-m)}
 .table-note{margin:14px 0 0;color:var(--c-text-3);font-size:var(--fs-s);line-height:1.5}
-@media(max-width:900px){.spec-table th,.spec-table td{padding:12px 14px;font-size:var(--fs-s)}}
+@media(max-width:900px){.spec-table th,.spec-table td{padding:12px 14px;font-size:var(--fs-s)}.spec-table td small{font-size:var(--fs-xs)}}
+@media(max-width:600px){.spec-table th,.spec-table td{padding:11px 8px}.spec-table th:first-child,.spec-table td:first-child{padding-left:12px}.spec-table th{letter-spacing:.5px;white-space:nowrap}}
 
 /* ---------- 13. News ---------- */
 .news-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap);margin:38px 0 0}

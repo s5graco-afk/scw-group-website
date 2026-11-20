@@ -77,7 +77,8 @@
 - `.detail` → `.gallery[data-gallery] > .gallery-track > img…` + `.detail-body.options`
 - `.options` + `details.option > summary + .option-text` (`.options.is-plain` — длинные списки)
 - `.choice-list` + `.choice` (`.has-dot`, `.is-soon`) — выбор модели, типа топлива и т.п.
-- `.table-wrap > table.spec-table` (`td.is-accent` — красное значение) + `.table-note` + `.tag-list > span` (метки опций)
+- `.table-wrap > table.spec-table` (`td.is-accent` — красное значение; в тюнинге колонки Model / Stock / Stage 1 / Gain,
+  ячейка `<b>109 hp</b><small>180 Nm</small>`, прибавку считает `tools/tuning_gain.py`) + `.table-note` + `.tag-list > span` (метки опций)
 - `.card-media.is-pending > span` — фото пока нет («Photo coming soon»)
 - Страница марки: `.filter-bar` + `.filter-chip` (`data-filter`, `data-only-ok`), `.model-list` > `.model-card[data-cat]` > `.model-thumb` + `.model-body` > `.gen-grid` > `a.gen` (`.is-ok` — есть решения), контейнер `main[data-catalog]`
 - `.news-grid` + `.news-card` (`.news-date`, `h2`, `p`, ссылка)
