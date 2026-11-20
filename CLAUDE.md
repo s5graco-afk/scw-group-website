@@ -109,7 +109,8 @@
 **Тексты**
 - Апгрейд мультимедиа: подпись `Multimedia upgrade`, заголовок
   `BMW Multimedia Upgrade — Option 1`, текст — что делаем, 1–2 предложения.
-  Ограничения выделять `<strong>`: `<strong>Android Auto is not supported by this system.</strong>`
+  Ограничения — отдельным блоком `<p class="card-note">` после текста (красная полоска слева):
+  `<strong>Android Auto is not supported in the factory configuration.</strong> To add this feature, please <a …wa.me…>consult with us</a>.`
 - Программное обновление: подпись `Software upgrade`.
 - Доп. оборудование (камеры и т.п.): **без подписи**, фото `is-padded`, раздел
   `<h2 class="section-title">Additional Equipment</h2>`.
