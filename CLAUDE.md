@@ -171,7 +171,7 @@
   метка «есть решения», кнопка «только с решениями» и метка «Solutions available»; фильтры по типу кузова и блок с VIN владелец попросил убрать). Компоненты `.filter-bar`, `.model-list`,
   `.model-card`, `.gen` (`.is-ok`) в scw.css, фильтры — `[data-catalog]` в scw.js.
   `models.html?brand=Mercedes-Benz` переадресует сюда. Так же сделана `bmw-models.html` (поколения без страницы —
-  `<span class="gen">`, не кликабельные; со страницей-заглушкой — `<a class="gen">` без `.is-ok`). Для остальных марок (MINI, Audi, Porsche, Lexus, Honda, Suzuki, Volkswagen, Toyota, Jaguar, Land Rover, Volvo) — `{марка}-models.html` (список Land Rover добавлен в `models.html` 2026-11-23)
+  `<span class="gen">`, не кликабельные; со страницей-заглушкой — `<a class="gen">` без `.is-ok`). Для остальных марок (MINI, Audi, Porsche, Lexus, Honda, Suzuki, Volkswagen, Toyota, Jaguar, Land Rover, Volvo) — `{марка}-models.html` (список Land Rover добавлен в `models.html` 2026-11-23; фото моделей — словарь THUMB в генераторе)
   в том же стиле (данные из старого `models.html`, генератор `gen_brand_models.py`); модели с решениями пока ведут на старые `vehicle.html?brand=…&model=…`;
   у марок без списка моделей — текст + Get a quote. Ссылки в `index.html`, `multimedia.html`, `news.html` ведут прямо сюда, `models.html?brand=…` переадресует.
 - BMW 1 Series F40 — хаб `bmw-f40.html` (активны мультимедиа и тюнинг `bmw-f40-tuning.html`); тюнинг также у F20, F22, F44, E90, F30; F44 мультимедиа = копия F40 iDrive 7 (`bmw-f44-idrive7.html`, старый `bmw-f44-oem1.html` переадресует), `bmw-f40-multimedia.html` (одна система),
