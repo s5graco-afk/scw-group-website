@@ -183,7 +183,8 @@
 - BMW X7 G07 — хаб `bmw-g07.html` (активна мультимедиа), `-multimedia.html`, `bmw-g07-idrive8.html` (как F40 iDrive 7: фото + список опций).
 - Land Rover Range Rover Evoque L538 — хаб `land-rover-l538.html` (активна мультимедиа), `-multimedia.html`, системы `land-rover-l538-early.html` (2011–2015) и `-incontrol.html` (2016–2018): одна карточка CarPlay/AA. Ссылка из `land-rover-models.html` через словарь PAGE в генераторе.
 - BMW F70, G42, G20, Z4 E85, i3, i4, i5, i8, iX, X3 G45, 7 Series/i7 G70 (одна страница) — страницы модели без контента (`bmw-f70`, `-g42`, `-g20`, `-e85`, `-i01`, `-g26`, `-g60`, `-i12`, `-i20`, `-g45`, `-g70.html`; генератор `gen_bmw_soon.py`): все услуги «coming soon», Get a quote.
-- [ ] Audi, Lexus, Toyota, Suzuki, SLK
+- Audi A4 B8 — перенесена: `audi-a4-b8.html` (мультимедиа, кодинг), `-multimedia.html`, `audi-a4-b8-oem1.html` (переписана по стандарту: 2 варианта экрана + камера), `-coding.html`; старые vehicle/solution/coding с параметрами A4 переадресуют.
+- [ ] Audi Q5, Lexus, Toyota, Suzuki
 - Главная: плитки марок с хромированными логотипами `assets/logo-{марка}.webp` (прозрачный фон, ~400 px),
   стиль — в конце `styles.css` (главная ещё на старых стилях). Есть у всех марок (Honda — чёрная эмблема, осветлена до серебра).
 - [ ] Главная, новости, каталог моделей, тюнинг
