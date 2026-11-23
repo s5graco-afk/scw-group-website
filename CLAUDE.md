@@ -70,7 +70,9 @@
 - Раскладка: `.page` (основной контейнер), `.back-link`, `.divider` (красная черта),
   `.page-title`, `.page-intro`, `.section-title`, `.section-label` (красный заголовок группы)
 - `.vehicle-hero` — марка / модель `<h1>3 Series <span>(F30)</span></h1>` / годы / текст / фото
-- `.service-grid` + `.service-tile` (`.is-soon` — услуга пока недоступна)
+- `.service-grid` + `.service-tile` (`.is-soon` — услуга пока недоступна). Порядок плиток: сначала доступные, потом «coming soon».
+  У всех BMW есть кодинг (`{хаб}-coding.html`) и Software update (`{хаб}-software.html`, копия `bmw-f40-software.html`).
+  Заглушки из `gen_bmw_soon.py` после этого правились руками — не перегенерировать без переноса плиток.
 - `.card-grid` (+`.is-narrow`) + `.card` → `.card-media` (по умолчанию фото 16:9 на всю
   площадь без белых полей; `.is-padded` — предмет на белом фоне; `.is-natural` — квадратные/высокие фото целиком) (под фото тонкая белая линия — `--card-media-line`) + `.card-body` (`.card-label`, `h3`, `p`, `.card-cta`).
   Кликабельная карточка — `<a class="card">`.
