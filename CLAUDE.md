@@ -174,7 +174,7 @@
   `<span class="gen">`, не кликабельные; со страницей-заглушкой — `<a class="gen">` без `.is-ok`). Для остальных марок (MINI, Audi, Porsche, Lexus, Honda, Suzuki, Volkswagen, Toyota, Jaguar, Land Rover, Volvo) — `{марка}-models.html` (список Land Rover добавлен в `models.html` 2026-11-23; фото моделей — словарь THUMB в генераторе)
   в том же стиле (данные из старого `models.html`, генератор `gen_brand_models.py`); модели с решениями пока ведут на старые `vehicle.html?brand=…&model=…`;
   у марок без списка моделей — текст + Get a quote. Ссылки в `index.html`, `multimedia.html`, `news.html` ведут прямо сюда, `models.html?brand=…` переадресует.
-- BMW 1 Series F40 — хаб `bmw-f40.html` (активны мультимедиа и тюнинг `bmw-f40-tuning.html`); тюнинг также у F20, F22, F44, E90, F30; F44 мультимедиа = копия F40 iDrive 7 (`bmw-f44-idrive7.html`, старый `bmw-f44-oem1.html` переадресует), `bmw-f40-multimedia.html` (одна система),
+- BMW 1 Series F40 — хаб `bmw-f40.html` (активны мультимедиа, тюнинг `bmw-f40-tuning.html` и новая плитка Software update → `bmw-f40-software.html`, иконка `assets/icon-service-software.webp`, фото `assets/bmw-software-update.webp`); тюнинг также у F20, F22, F44, E90, F30; F44 мультимедиа = копия F40 iDrive 7 (`bmw-f44-idrive7.html`, старый `bmw-f44-oem1.html` переадресует), `bmw-f40-multimedia.html` (одна система),
   `bmw-f40-idrive7.html` (как `bmw-g02-oem2.html`: галерея + список опций).
 - Mercedes W206 — хаб `mercedes-w206.html` (активна мультимедиа), `-multimedia.html`, `mercedes-w206-ntg7.html`
   (полная копия W205 NTG 6, по просьбе владельца; фото тоже от W205 NTG 6, пока нет своего).

@@ -257,6 +257,8 @@ a.card:hover{border-color:var(--c-accent);transform:translateY(-2px)}
 .card-label{display:block;margin-bottom:8px;color:var(--c-accent);font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
 .card-body h3{margin:0 0 7px;font-size:var(--fs-h3);line-height:1.4;color:var(--c-text-strong)}
 .card-body p{margin:0;color:var(--c-text-2);font-size:var(--fs-m);line-height:1.55}
+/* Several paragraphs in one card: small gap between them */
+.card-body p+p{margin-top:10px}
 /* Highlighted limitation inside a card (e.g. "Android Auto is not supported in the factory configuration").
    Red left bar on a faint red background; the link leads to WhatsApp. */
 .card-body .card-note{margin-top:12px;padding:10px 12px;border-left:3px solid var(--c-accent);border-radius:var(--radius-s);background:rgba(240,24,39,.10);color:var(--c-text)}
